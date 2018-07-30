@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Log In Medmro</title>
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-white before-login" id="mainNav">
+    <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li><a href="#">Learn More</a></li>
+        <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language <span class="caret"></span></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="/">English</a></li>
+                        <li><a href="/de/">Deutsch</a></li>
+                        <li><a href="/ja/">日本語</a></li>
+                        <li><a href="/fr/">Français</a></li>
+                        <li><a href="#">中文</a></li>
+                     </ul>
+                  </li>
+       </ul>
+    </div>
+  </nav>
+    <div id="myWizard" class="stepwizard col-md-offset-3">
+    <div class="stepwizard-row setup-panel">
+      <div class="stepwizard-step">
+        <a href="#step-1" type="button" class="btn btn-primary btn-circle">Confirm company info</a>
+        
+      </div>
+      <div class="stepwizard-step">
+        <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">Create your account</a>
+      </div>
+      <div class="stepwizard-step">
+        <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">Start using Medmro</a>
+      </div>
+    </div>
+  </div>
+        <div class="wizard-register">
+  <div class="card card-register mx-auto mt-5">
+  <div class="card-body">
+  <form role="form" action="" method="post">
+    <div class=" setup-content" id="step-1">
+  <div class="card-header">Provide your company info</div>
+          
+          <div class="form-group">
+            <label class="control-label">Business Name</label>
+            <input  maxlength="100" type="text" required="required" class="form-control" placeholder="BUSINESS NAME"  />
+          </div>
+          <div class="form-group">
+            <label class="control-label">Country/Region</label>
+            <select class="form-control">
+              <option>-Select country/region</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="control-label">Company Size</label>
+            <select class="form-control">
+              <option>-Select company size</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="control-label">Industry</label>
+            <select class="form-control">
+              <option>-Select industry</option>
+            </select>
+          </div>
+          <div class="form-group">
+          <button class="btn btn-primary btn-circle nextBtn btn-block" type="button" >Next</button>
+          </div>
+      
+    </div>
+    <div class=" setup-content" id="step-2">
+       <div class="card-header">Create your account</div>
+       <a href="#" class="googleLink">
+                    Continue with Google
+                    <span><img src="img/google.jpg"></span>
+                </a>
+
+      <div class="divider"><span class="or">or</span></div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label class="control-label">First Name</label>
+            <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter First Name" />
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label class="control-label">Last Name</label>
+            <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Last Name" />
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label class="control-label">Email</label>
+            <input maxlength="200" type="email" required="required" class="form-control" placeholder="Enter Last Name" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label class="control-label">Password</label>
+            <input maxlength="200" type="password" required="required" class="form-control" placeholder="Enter Last Name" />
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group password-show">
+            <label class="control-label">
+               <input type="checkbox"  class="">
+               <span class="showPassword" >Show password</span>
+            </label>
+          </div>
+        </div>
+        <div class="col-sm-6">
+           <div class="form-group">
+            <label class="control-label">Language</label>
+            <select class="form-control">
+              <option>English (US)</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="form-group">
+            <span class="policy">
+               <input type="checkbox"  class="">
+                By signing up, you are indicating that you have read and agree to <a class="tst-terms" rel="noopener" target="_blank" href="https://tradeshift.com/terms-of-service/">Tradeshift's Terms of Service</a> and <a class="tst-privacypolicy somethingstinks" rel="noopener" target="_blank" href="https://tradeshift.com/privacy-policy">Privacy Policy.</a>
+                </span>
+          </div>
+          <div class="form-group">
+            <span class="policy">
+               <input type="checkbox"  class=""> Yes, I want to receive marketing communications from Tradeshift.</span>
+          </div>
+           <button class="btn btn-primary btn-circle   btn-block" type="button" >Create Account</button>
+        </div> 
+        </div>
+    </div>
+  </form>
+  </div>
+  </div>
+  <div class="text-center register-account-span">
+         <span>Already have an Account? <a class="mt-5" href="login.html"> Log In</a></span> 
+        </div>
+        </div>
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/sb-admin.js"></script>
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+</body>
+
+</html>
