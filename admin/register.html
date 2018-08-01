@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Log In Medmro</title>
+  <title>Create your account</title>
   <!-- Bootstrap core CSS-->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
@@ -26,7 +26,7 @@
       <ul class="navbar-nav ml-auto">
         <li><a href="#">Learn More</a></li>
         <li class="dropdown">
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language <span class="caret"></span></a>
+                     <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language <span class="caret"></span></a>
                      <ul class="dropdown-menu">
                         <li><a href="/">English</a></li>
                         <li><a href="/de/">Deutsch</a></li>
@@ -65,24 +65,18 @@
           </div>
           <div class="form-group">
             <label class="control-label">Country/Region</label>
-            <select class="form-control">
-              <option>-Select country/region</option>
-            </select>
+            <input type="text" class="form-control select-country" placeholder="-Select country/region" name="" >
           </div>
           <div class="form-group">
-            <label class="control-label">Company Size</label>
-            <select class="form-control">
-              <option>-Select company size</option>
-            </select>
+            <label class="control-label">Company Size</label> <span><small>Optional</small> </span>
+            <input type="text" class="form-control select-company-size" placeholder="-Select company size" name="" >
           </div>
           <div class="form-group">
-            <label class="control-label">Industry</label>
-            <select class="form-control">
-              <option>-Select industry</option>
-            </select>
+            <label class="control-label">Industry</label> <span><small>Optional</small> </span>
+              <input type="text" class="form-control select-industry" placeholder="-Select industry" name="" >
           </div>
           <div class="form-group">
-          <button class="btn btn-primary btn-circle nextBtn btn-block" type="button" >Next</button>
+          <button class="btn btn-primary btn-circle nextBtn btn-block" type="button" >Confirm</button>
           </div>
       
     </div>
@@ -132,9 +126,7 @@
         <div class="col-sm-6">
            <div class="form-group">
             <label class="control-label">Language</label>
-            <select class="form-control">
-              <option>English (US)</option>
-            </select>
+            <input type="text" class="form-control lanuage-selector" placeholder="English (UK)" name="">
           </div>
         </div>
         <div class="col-sm-12">
@@ -160,6 +152,360 @@
         </div>
         </div>
   <!-- Bootstrap core JavaScript-->
+  <!-- country selction -->
+  <div class="overlay-full hide"></div>
+  <div  id="country-selection" class="hide right-bar">
+    <a href="JavaScript:void(0)" class="close-sidebar"><i class="fa fa-close"></i></a>
+   <menu>
+      <li id="key582476969-0"><button class="active"><span class="title">- Select country/region -</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-1"><button><i class="flag af"></i><span>Afghanistan</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-2"><button><i class="flag ax"></i><span>Aland</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-3"><button><i class="flag al"></i><span>Albania</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-4"><button><i class="flag dz"></i><span>Algeria</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-5"><button><i class="flag as"></i><span>American Samoa</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-6"><button><i class="flag ad"></i><span>Andorra</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-7"><button><i class="flag ao"></i><span>Angola</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-8"><button><i class="flag ai"></i><span>Anguilla</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-9"><button><i class="flag aq"></i><span>Antarctica</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-10"><button><i class="flag ag"></i><span>Antigua and Barbuda</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-11"><button><i class="flag ar"></i><span>Argentina</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-12"><button><i class="flag am"></i><span>Armenia</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-13"><button><i class="flag aw"></i><span>Aruba</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-14"><button><i class="flag au"></i><span>Australia</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-15"><button><i class="flag at"></i><span>Austria</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-16"><button><i class="flag az"></i><span>Azerbaijan</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-17"><button><i class="flag bs"></i><span>Bahamas, The</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-18"><button><i class="flag bh"></i><span>Bahrain</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-19"><button><i class="flag bd"></i><span>Bangladesh</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-20"><button><i class="flag bb"></i><span>Barbados</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-21"><button><i class="flag by"></i><span>Belarus</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-22"><button><i class="flag be"></i><span>Belgium</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-23"><button><i class="flag bz"></i><span>Belize</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-24"><button><i class="flag bj"></i><span>Benin</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-25"><button><i class="flag bm"></i><span>Bermuda</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-26"><button><i class="flag bt"></i><span>Bhutan</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-27"><button><i class="flag bo"></i><span>Bolivia</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-28"><button><i class="flag ba"></i><span>Bosnia and Herzegovina</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-29"><button><i class="flag bw"></i><span>Botswana</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-30"><button><i class="flag bv"></i><span>Bouvet Island</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-31"><button><i class="flag br"></i><span>Brazil</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-32"><button><i class="flag io"></i><span>British Indian Ocean Territory</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-33"><button><i class="flag vg"></i><span>British Virgin Islands</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-34"><button><i class="flag bn"></i><span>Brunei</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-35"><button><i class="flag bg"></i><span>Bulgaria</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-36"><button><i class="flag bf"></i><span>Burkina Faso</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-37"><button><i class="flag bi"></i><span>Burundi</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-38"><button><i class="flag kh"></i><span>Cambodia</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-39"><button><i class="flag cm"></i><span>Cameroon</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-40"><button><i class="flag ca"></i><span>Canada</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-41"><button><i class="flag cv"></i><span>Cape Verde</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-42"><button><i class="flag bq"></i><span>Caribbean Netherlands</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-43"><button><i class="flag ky"></i><span>Cayman Islands</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-44"><button><i class="flag cf"></i><span>Central African Republic</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-45"><button><i class="flag td"></i><span>Chad</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-46"><button><i class="flag cl"></i><span>Chile</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-47"><button><i class="flag cn"></i><span>China</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-48"><button><i class="flag cx"></i><span>Christmas Island</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-49"><button><i class="flag pf"></i><span>Clipperton Island</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-50"><button><i class="flag cc"></i><span>Cocos (Keeling) Islands</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-51"><button><i class="flag mf"></i><span>Collectivity of Saint Martin</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-52" class="ts-checked"><button><i class="flag co"></i><span>Colombia</span><i class="ts-icon-checked"></i></button></li>
+      <li id="key582476969-53"><button><i class="flag km"></i><span>Comoros</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-54"><button><i class="flag cd"></i><span>Congo, Democratic Republic of the (Congo Kinshasa)</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-55"><button><i class="flag cg"></i><span>Congo, Republic of the (Congo Brazzaville)</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-56"><button><i class="flag ck"></i><span>Cook Islands</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-57"><button><i class="flag cr"></i><span>Costa Rica</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-58"><button><i class="flag ci"></i><span>Cote d'Ivoire (Ivory Coast)</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-59"><button><i class="flag hr"></i><span>Croatia</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-60"><button><i class="flag cw"></i><span>Curaçao</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-61"><button><i class="flag cy"></i><span>Cyprus</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-62"><button><i class="flag cz"></i><span>Czech Republic</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-63"><button><i class="flag dk"></i><span>Denmark</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-64"><button><i class="flag dj"></i><span>Djibouti</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-65"><button><i class="flag dm"></i><span>Dominica</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-66"><button><i class="flag do"></i><span>Dominican Republic</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-67"><button><i class="flag ec"></i><span>Ecuador</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-68"><button><i class="flag eg"></i><span>Egypt</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-69"><button><i class="flag sv"></i><span>El Salvador</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-70"><button><i class="flag gq"></i><span>Equatorial Guinea</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-71"><button><i class="flag er"></i><span>Eritrea</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-72"><button><i class="flag ee"></i><span>Estonia</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-73"><button><i class="flag et"></i><span>Ethiopia</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-74"><button><i class="flag fk"></i><span>Falkland Islands (Islas Malvinas)</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-75"><button><i class="flag fo"></i><span>Faroe Islands</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-76"><button><i class="flag fj"></i><span>Fiji</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-77"><button><i class="flag fi"></i><span>Finland</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-78"><button><i class="flag fr"></i><span>France</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-79"><button><i class="flag gf"></i><span>French Guiana</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-80"><button><i class="flag tf"></i><span>French Southern and Antarctic Lands</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-81"><button><i class="flag ga"></i><span>Gabon</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-82"><button><i class="flag gm"></i><span>Gambia, The</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-83"><button><i class="flag ge"></i><span>Georgia</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-84"><button><i class="flag de"></i><span>Germany</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-85"><button><i class="flag gh"></i><span>Ghana</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-86"><button><i class="flag gi"></i><span>Gibraltar</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-87"><button><i class="flag gr"></i><span>Greece</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-88"><button><i class="flag gl"></i><span>Greenland</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-89"><button><i class="flag gd"></i><span>Grenada</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-90"><button><i class="flag gp"></i><span>Guadeloupe</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-91"><button><i class="flag gu"></i><span>Guam</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-92"><button><i class="flag gt"></i><span>Guatemala</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-93"><button><i class="flag gg"></i><span>Guernsey</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-94"><button><i class="flag gn"></i><span>Guinea</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-95"><button><i class="flag gw"></i><span>Guinea-Bissau</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-96"><button><i class="flag gy"></i><span>Guyana</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-97"><button><i class="flag ht"></i><span>Haiti</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-98"><button><i class="flag hm"></i><span>Heard Island and McDonald Islands</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-99"><button><i class="flag hn"></i><span>Honduras</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-100"><button><i class="flag hk"></i><span>Hong Kong</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-101"><button><i class="flag hu"></i><span>Hungary</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-102"><button><i class="flag is"></i><span>Iceland</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-103"><button><i class="flag in"></i><span>India</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-104"><button><i class="flag id"></i><span>Indonesia</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-105"><button><i class="flag iq"></i><span>Iraq</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-106"><button><i class="flag ie"></i><span>Ireland</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-107"><button><i class="flag im"></i><span>Isle of Man</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-108"><button><i class="flag il"></i><span>Israel</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-109"><button><i class="flag it"></i><span>Italy</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-110"><button><i class="flag jm"></i><span>Jamaica</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-111"><button><i class="flag jp"></i><span>Japan</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-112"><button><i class="flag je"></i><span>Jersey</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-113"><button><i class="flag jo"></i><span>Jordan</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-114"><button><i class="flag kz"></i><span>Kazakhstan</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-115"><button><i class="flag ke"></i><span>Kenya</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-116"><button><i class="flag ki"></i><span>Kiribati</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-117"><button><i class="flag kr"></i><span>Korea, Republic of (South Korea)</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-118"><button><i class="flag kw"></i><span>Kuwait</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-119"><button><i class="flag kg"></i><span>Kyrgyzstan</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-120"><button><i class="flag la"></i><span>Laos</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-121"><button><i class="flag lv"></i><span>Latvia</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-122"><button><i class="flag lb"></i><span>Lebanon</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-123"><button><i class="flag ls"></i><span>Lesotho</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-124"><button><i class="flag lr"></i><span>Liberia</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-125"><button><i class="flag ly"></i><span>Libya</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-126"><button><i class="flag li"></i><span>Liechtenstein</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-127"><button><i class="flag lt"></i><span>Lithuania</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-128"><button><i class="flag lu"></i><span>Luxembourg</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-129"><button><i class="flag mo"></i><span>Macau</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-130"><button><i class="flag mk"></i><span>Macedonia</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-131"><button><i class="flag mg"></i><span>Madagascar</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-132"><button><i class="flag mw"></i><span>Malawi</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-133"><button><i class="flag my"></i><span>Malaysia</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-134"><button><i class="flag mv"></i><span>Maldives</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-135"><button><i class="flag ml"></i><span>Mali</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-136"><button><i class="flag mt"></i><span>Malta</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-137"><button><i class="flag mh"></i><span>Marshall Islands</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-138"><button><i class="flag mq"></i><span>Martinique</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-139"><button><i class="flag mr"></i><span>Mauritania</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-140"><button><i class="flag mu"></i><span>Mauritius</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-141"><button><i class="flag yt"></i><span>Mayotte</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-142"><button><i class="flag mx"></i><span>Mexico</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-143"><button><i class="flag fm"></i><span>Micronesia</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-144"><button><i class="flag md"></i><span>Moldova</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-145"><button><i class="flag mc"></i><span>Monaco</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-146"><button><i class="flag mn"></i><span>Mongolia</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-147"><button><i class="flag me"></i><span>Montenegro</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-148"><button><i class="flag ms"></i><span>Montserrat</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-149"><button><i class="flag ma"></i><span>Morocco</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-150"><button><i class="flag mz"></i><span>Mozambique</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-151"><button><i class="flag mm"></i><span>Myanmar (Burma)</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-152"><button><i class="flag na"></i><span>Namibia</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-153"><button><i class="flag nr"></i><span>Nauru</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-154"><button><i class="flag np"></i><span>Nepal</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-155"><button><i class="flag nl"></i><span>Netherlands</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-156"><button><i class="flag nc"></i><span>New Caledonia</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-157"><button><i class="flag nz"></i><span>New Zealand</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-158"><button><i class="flag ni"></i><span>Nicaragua</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-159"><button><i class="flag ne"></i><span>Niger</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-160"><button><i class="flag ng"></i><span>Nigeria</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-161"><button><i class="flag nu"></i><span>Niue</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-162"><button><i class="flag nf"></i><span>Norfolk Island</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-163"><button><i class="flag mp"></i><span>Northern Mariana Islands</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-164"><button><i class="flag no"></i><span>Norway</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-165"><button><i class="flag om"></i><span>Oman</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-166"><button><i class="flag pk"></i><span>Pakistan</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-167"><button><i class="flag pw"></i><span>Palau</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-168"><button><i class="flag ps"></i><span>Palestinian Territories (Gaza Strip and West Bank)</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-169"><button><i class="flag pa"></i><span>Panama</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-170"><button><i class="flag pg"></i><span>Papua New Guinea</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-171"><button><i class="flag py"></i><span>Paraguay</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-172"><button><i class="flag pe"></i><span>Peru</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-173"><button><i class="flag ph"></i><span>Philippines</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-174"><button><i class="flag pn"></i><span>Pitcairn Islands</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-175"><button><i class="flag pl"></i><span>Poland</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-176"><button><i class="flag pt"></i><span>Portugal</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-177"><button><i class="flag pr"></i><span>Puerto Rico</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-178"><button><i class="flag qa"></i><span>Qatar</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-179"><button><i class="flag re"></i><span>Reunion</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-180"><button><i class="flag ro"></i><span>Romania</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-181"><button><i class="flag ru"></i><span>Russia</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-182"><button><i class="flag rw"></i><span>Rwanda</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-183"><button><i class="flag bl"></i><span>Saint Barthélemy</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-184"><button><i class="flag sh"></i><span>Saint Helena</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-185"><button><i class="flag kn"></i><span>Saint Kitts and Nevis</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-186"><button><i class="flag lc"></i><span>Saint Lucia</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-187"><button><i class="flag pm"></i><span>Saint Pierre and Miquelon</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-188"><button><i class="flag vc"></i><span>Saint Vincent and the Grenadines</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-189"><button><i class="flag ws"></i><span>Samoa</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-190"><button><i class="flag sm"></i><span>San Marino</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-191"><button><i class="flag st"></i><span>Sao Tome and Principe</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-192"><button><i class="flag sa"></i><span>Saudi Arabia</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-193"><button><i class="flag sn"></i><span>Senegal</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-194"><button><i class="flag rs"></i><span>Serbia</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-195"><button><i class="flag sc"></i><span>Seychelles</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-196"><button><i class="flag sl"></i><span>Sierra Leone</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-197"><button><i class="flag sg"></i><span>Singapore</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-198"><button><i class="flag sx"></i><span>Sint Maarten</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-199"><button><i class="flag sk"></i><span>Slovakia</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-200"><button><i class="flag si"></i><span>Slovenia</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-201"><button><i class="flag sb"></i><span>Solomon Islands</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-202"><button><i class="flag so"></i><span>Somalia</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-203"><button><i class="flag za"></i><span>South Africa</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-204"><button><i class="flag gs"></i><span>South Georgia and the South Sandwich Islands</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-205"><button><i class="flag ss"></i><span>South Sudan</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-206"><button><i class="flag es"></i><span>Spain</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-207"><button><i class="flag lk"></i><span>Sri Lanka</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-208"><button><i class="flag sr"></i><span>Suriname</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-209"><button><i class="flag sj"></i><span>Svalbard</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-210"><button><i class="flag sz"></i><span>Swaziland</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-211"><button><i class="flag se"></i><span>Sweden</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-212"><button><i class="flag ch"></i><span>Switzerland</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-213"><button><i class="flag tw"></i><span>Taiwan</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-214"><button><i class="flag tj"></i><span>Tajikistan</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-215"><button><i class="flag tz"></i><span>Tanzania</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-216"><button><i class="flag th"></i><span>Thailand</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-217"><button><i class="flag tl"></i><span>Timor-Leste (East Timor)</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-218"><button><i class="flag tg"></i><span>Togo</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-219"><button><i class="flag tk"></i><span>Tokelau</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-220"><button><i class="flag to"></i><span>Tonga</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-221"><button><i class="flag tt"></i><span>Trinidad and Tobago</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-222"><button><i class="flag tn"></i><span>Tunisia</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-223"><button><i class="flag tr"></i><span>Turkey</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-224"><button><i class="flag tm"></i><span>Turkmenistan</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-225"><button><i class="flag tc"></i><span>Turks and Caicos Islands</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-226"><button><i class="flag tv"></i><span>Tuvalu</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-227"><button><i class="flag vi"></i><span>U.S. Virgin Islands</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-228"><button><i class="flag ug"></i><span>Uganda</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-229"><button><i class="flag ua"></i><span>Ukraine</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-230"><button><i class="flag ae"></i><span>United Arab Emirates</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-231"><button><i class="flag gb"></i><span>United Kingdom</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-232"><button><i class="flag us"></i><span>United States</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-233"><button><i class="flag um"></i><span>United States Minor Outlying Islands</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-234"><button><i class="flag uy"></i><span>Uruguay</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-235"><button><i class="flag uz"></i><span>Uzbekistan</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-236"><button><i class="flag vu"></i><span>Vanuatu</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-237"><button><i class="flag va"></i><span>Vatican City</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-238"><button><i class="flag ve"></i><span>Venezuela</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-239"><button><i class="flag vn"></i><span>Vietnam</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-240"><button><i class="flag wf"></i><span>Wallis and Futuna</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-241"><button><i class="flag eh"></i><span>Western Sahara</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-242"><button><i class="flag ye"></i><span>Yemen</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-243"><button><i class="flag zm"></i><span>Zambia</span> <i class="fa fa-check"></i></button></li>
+      <li id="key582476969-244"><button><i class="flag zw"></i><span>Zimbabwe</span> <i class="fa fa-check"></i></button></li>
+   </menu>
+</div>
+   <div  id="company-size" class=" right-bar hide">
+    <a href="JavaScript:void(0)" class="close-sidebar"><i class="fa fa-close"></i></a>
+      <menu>
+       <li id="key467774217-0" class="ts-checked"><button class="active"><span>- Select company size -</span><i class="fa fa-check"></i></button></li>
+       <li id="key467774217-1"><button><span>1 employee (just me)</span><i class="fa fa-check"></i></button></li>
+       <li id="key467774217-2"><button><span>2-15 employees</span><i class="fa fa-check"></i></button></li>
+       <li id="key467774217-3"><button><span>16-49 employees</span><i class="fa fa-check"></i></button></li>
+       <li id="key467774217-4"><button><span>50-99 employees</span><i class="fa fa-check"></i></button></li>
+       <li id="key467774217-5"><button><span>100-249 employees</span><i class="fa fa-check"></i></button></li>
+       <li id="key467774217-6"><button><span>250-499 employees</span><i class="fa fa-check"></i></button></li>
+       <li id="key467774217-7"><button><span>500-999 employees</span><i class="fa fa-check"></i></button></li>
+       <li id="key467774217-8"><button><span>1,000-4,999 employees</span><i class="fa fa-check"></i></button></li>
+       <li id="key467774217-9"><button><span>5,000-9,999 employees</span><i class="fa fa-check"></i></button></li>
+       <li id="key467774217-10"><button><span>10,000 or more employees</span><i class="fa fa-check"></i></button></li>
+    </menu>
+</div>
+
+  <div  id="industry" class="hide right-bar">
+    <a href="JavaScript:void(0)" class="close-sidebar"><i class="fa fa-close"></i></a>
+     <menu>
+   <li id="key507307881-0"><button class="active"><span>Select industry</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-1"><button><span>Academia</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-2"><button><span>Animal care</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-3"><button><span>Agriculture</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-4"><button><span>Apparel</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-5"><button><span>Banking</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-6"><button><span>Beauty and Cosmetics</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-7"><button><span>Biotechnology</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-8"><button><span>Business Services</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-9"><button><span>Chemicals</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-10"><button><span>Communications</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-11"><button><span>Construction</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-12"><button><span>Consulting</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-13"><button><span>Distribution</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-14"><button><span>Education</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-15"><button><span>Electronics</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-16"><button><span>Energy</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-17"><button><span>Engineering</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-18"><button><span>Entertainment</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-19"><button><span>Environmental</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-20"><button><span>Finance</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-21"><button><span>Food and Beverage</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-22"><button><span>Government and Public services</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-23"><button><span>Grant and Fundraising</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-24"><button><span>Healthcare</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-25"><button><span>Hospitality</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-26"><button><span>HR and Recruitment</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-27"><button><span>Insurance</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-28"><button><span>Legal Services</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-29"><button><span>Machinery</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-30"><button><span>Manufacturing</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-31"><button><span>Media</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-32"><button><span>Medical Equipment and Supplies</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-33"><button><span>Not For Profit</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-34"><button><span>Oil and Gas</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-35"><button><span>Pharmaceutical</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-36"><button><span>Real Estate</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-37"><button><span>Recreation</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-38"><button><span>Recruitment</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-39"><button><span>Research (non-academia)</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-40"><button><span>Retail</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-41"><button><span>Security Services</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-42"><button><span>Shipping</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-43"><button><span>Software and IT</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-44"><button><span>Technology Hardware</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-45"><button><span>Telecommunications</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-46"><button><span>Transportation</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-47"><button><span>Travel</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-48"><button><span>Utilities</span><i class="fa fa-check"></i></button></li>
+   <li id="key507307881-49"><button><span>Other</span><i class="fa fa-check"></i></button></li>
+</menu>
+</div>
+
+   <div  id="language" class=" right-bar hide">
+    <a href="JavaScript:void(0)" class="close-sidebar"><i class="fa fa-close"></i></a>
+      <menu>
+   <li id="key638445448-0"><button><span>Select language</span><i class="fa fa-check"></i></button></li>
+   <li id="key638445448-1"><button><span>Bahasa Indonesia</span><i class="fa fa-check"></i></button></li>
+   <li id="key638445448-2"><button><span>Bahasa Melayu</span><i class="fa fa-check"></i></button></li>
+   <li id="key638445448-3"><button><span>Castellano</span><i class="fa fa-check"></i></button></li>
+   <li id="key638445448-4"><button><span>Dansk</span><i class="fa fa-check"></i></button></li>
+   <li id="key638445448-5"><button><span>Deutsch</span><i class="fa fa-check"></i></button></li>
+   <li id="key638445448-6"><button><span>Deutsch (CH)</span><i class="fa fa-check"></i></button></li>
+   <li id="key638445448-7"><button class="active"><span>English (UK)</span><i class="fa fa-check"></i></button></li>
+   <li id="key638445448-8"><button><span>English (US)</span><i class="fa fa-check"></i></button></li>
+   <li id="key638445448-9"><button><span>Français</span><i class="fa fa-check"></i></button></li>
+   <li id="key638445448-10"><button><span>Italiano</span><i class="fa fa-check"></i></button></li>
+   <li id="key638445448-11"><button><span>Magyar</span><i class="fa fa-check"></i></button></li>
+   <li id="key638445448-12"><button><span>Nederlands</span><i class="fa fa-check"></i></button></li>
+   <li id="key638445448-13"><button><span>Norsk Bokmål</span><i class="fa fa-check"></i></button></li>
+   <li id="key638445448-14"><button><span>Polski</span><i class="fa fa-check"></i></button></li>
+   <li id="key638445448-15"><button><span>Português (Brasil)</span><i class="fa fa-check"></i></button></li>
+   <li id="key638445448-16"><button><span>Português (Portugal)</span><i class="fa fa-check"></i></button></li>
+   <li id="key638445448-17"><button><span>Română</span><i class="fa fa-check"></i></button></li>
+   <li id="key638445448-18"><button><span>Suomi</span><i class="fa fa-check"></i></button></li>
+   <li id="key638445448-19"><button><span>Svenska</span><i class="fa fa-check"></i></button></li>
+   <li id="key638445448-20"><button><span>日本語</span><i class="fa fa-check"></i></button></li>
+   <li id="key638445448-21"><button><span>简体中文</span><i class="fa fa-check"></i></button></li>
+   <li id="key638445448-22"><button><span>繁体中文</span><i class="fa fa-check"></i></button></li>
+    </menu>
+</div>
+  <!-- country selection ends -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="js/sb-admin.js"></script>

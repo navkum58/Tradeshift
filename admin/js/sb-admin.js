@@ -41,6 +41,89 @@ $( document ).ready(function() {
   });
 
   $('div.setup-panel div a.btn-primary').trigger('click');
+  /*select-country*/
+
+   $('.select-country').focus(function () {
+                $('.overlay-full').show();
+                $('#country-selection').show();
+            });
+      $('.close-sidebar').click(function () {
+                $('.overlay-full').hide();
+                $('#country-selection').hide();
+            });
+
+  $('#country-selection menu li button').click(function(e){
+     var txt = $(e.target).text();
+     console.log(txt);
+     $('.select-country').val(txt);
+    $('#country-selection menu li button').removeClass('active');
+    $(this).addClass('active');
+                $('.overlay-full').hide();
+                $('#country-selection').hide(500);
+  });    
+  /*select-country*/
+    /*select-company size*/
+
+   $('.select-company-size').focus(function () {
+                $('.overlay-full').show();
+                $('#company-size').show();
+            });
+      $('.close-sidebar').click(function () {
+                $('.overlay-full').hide();
+                $('#company-size').hide();
+            });
+
+  $('#company-size menu li button').click(function(e){
+     var size = $(e.target).text();
+     console.log(size);
+     $('.select-company-size').val(size);
+      $('#company-size menu li button').removeClass('active');
+              $(this).addClass('active');
+                $('.overlay-full').hide();
+                $('#company-size').hide(500);
+  });    
+  /*select-company size*/
+      /*select-company size*/
+
+   $('.select-industry').focus(function () {
+                $('.overlay-full').show();
+                $('#industry').show();
+            });
+      $('.close-sidebar').click(function () {
+                $('.overlay-full').hide();
+                $('#industry').hide();
+            });
+
+  $('#industry menu li button').click(function(e){
+     var size = $(e.target).text();
+     console.log(size);
+     $('.select-industry').val(size);
+      $('#industry menu li button').removeClass('active');
+              $(this).addClass('active');
+                $('.overlay-full').hide();
+                $('#industry').hide(500);
+  });    
+  /*select-company size*/
+        /*select-company size*/
+
+   $('.lanuage-selector').focus(function () {
+                $('.overlay-full').show();
+                $('#language').show();
+            });
+      $('.close-sidebar').click(function () {
+                $('.overlay-full').hide();
+                $('#language').hide();
+            });
+
+  $('#language menu li button').click(function(e){
+     var lang = $(e.target).text();
+     console.log(lang);
+     $('.lanuage-selector').val(lang);
+      $('#language menu li button').removeClass('active');
+              $(this).addClass('active');
+                $('.overlay-full').hide();
+                $('#language').hide(500);
+  });  
 });
 (function($) {
   "use strict"; // Start of use strict
