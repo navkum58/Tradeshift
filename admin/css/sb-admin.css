@@ -18,10 +18,16 @@ body.sticky-footer .content-wrapper {
 body.fixed-nav {
   padding-top: 56px;
 }
+.no-padding{padding: 0px!important;}
 .hide{display: none;}
 .show{display: block;}
 a{    color: #00b0ff;}
 .btn-circle{border-radius: 30px;text-transform: uppercase;font-weight: 600;}
+.btn-white-border{border-radius: 30px;text-transform: uppercase;font-weight: 600;background-color: none;color: #fff; border:1.5px solid #fff;}
+.btn-white-border:hover{background-color: #fff;color: #878787;}
+.btn-primary-border, .btn-primary-border:hover{padding: .5rem 2rem; border-radius: 30px;text-transform: uppercase;font-weight: 600;background-color: none;color: #00b0ff; border:1px solid #00b0ff;}
+.btn-success{border-radius: 30px;text-transform: uppercase;font-weight: 600;color: #fff; min-width: 100px;padding: .5rem 2rem; }
+.navbar-nav.ml-auto li a{margin-left: 15px;}
 .content-wrapper {
   min-height: calc(100vh - 56px);
   padding-top: 1rem;
@@ -1485,3 +1491,68 @@ div#myWizard a.btn-primary{background-color: #fdfed5;}
 
 #language menu li:first-child span{padding-left: 10px;}
 #language menu li span{padding-left: 0px;}
+/*profile page*/
+.main-bg {
+    background: url(../img/main-bg.jpg) no-repeat;
+    height: 300px;
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+}
+.edit-bg{position: absolute;right: 10px;top: 10px;background: rgba(255,255,255,.5);width: 25px;height: 25px;text-align: center;border-radius: 50%;z-index: 99;}
+.edit-bg a{color: #000;}
+.profile-block {position: relative; top: -30px; max-width:1080px; margin: 0 auto; } 
+.padded-container {padding: 20px; box-shadow: 0 2px 10px -4px rgba(0, 0, 0, 0.2); } 
+.img-block {width: 200px; height: 200px; background-size: cover!important; background-color: #f2f2f2!important; padding: 5px; margin: 0 auto; border-radius: 10px; position: relative; top: -50px; box-shadow: 0px 1px 6px #403f3f; background-position: 35% 39%!important; }
+.company-name{padding-top: 200px;text-align: center;font-size: 20px; font-weight: 600;}
+.website{text-align: center;font-size: 16px;font-style: italic;margin-bottom: 20px;}
+.info label{font-weight:600; text-transform: uppercase;color: #afafaf; font-size: 13px;letter-spacing: .5px; }
+.info .info-block{color:#afafaf;font-size: 16px;margin-bottom: 20px;font-size:18px; }
+.info .info-block i {
+    font-size:18px;
+    padding-right: 10px;
+    text-align: center;
+    width: 30px;
+}
+.map-block{margin:0px -20px -20px -20px; }
+.edit-btn {
+    border: 1.1px solid #2ec3ff;
+    border-radius: 15px;
+    position: absolute;
+    right: 5%;
+    top:20%;
+    width: 65px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+.edit-btn a{display: block;}
+.img{width: 50px; height: 50px;float: left; background: #f1f1f1;line-height: 50px;border-radius: 50%;text-align: center;font-size: 20px;font-weight: 600;}
+span.name{font-size: 20px;padding-left: 20px;font-weight: 600;color:#2ec3ff;padding-top: 8px;float: left;letter-spacing: 1px; }
+.title-main{font-size: 20px;color: #888;}
+.profile-progress {position: absolute; right: 10px; width: 255px; top: 25px; } 
+.profile-progress .progress-bar{background-color: #40a15a; }
+.profile-progress .progress{height: 1.5rem;border-radius: 25px;}
+.profile-detail{padding-top: 20px;}
+.profile-detail label{text-transform: uppercase;font-weight: 600;color: #888;font-size: 12px;}
+.right-btn-set{top:8%;}
+.product-service{display: block;text-align: center;}
+.product-service a{display: inline-block;margin: 0px 20px;}
+.product-service a img{max-height: 150px;}
+.product-list{text-align: center;}
+.product-list ul{display: block;list-style: none;padding: 0px;margin-bottom: 30px;}
+.product-list ul li a:hover{text-decoration: none;}
+.product-list ul li{display: inline-block;border: 1px solid #eee;padding: 15px;text-align: center;height: 160px;margin-right: 10px;width: 160px;}
+.product-list ul li .detail img{display: block;max-height:50px;margin-bottom: 20px;max-width: 100%;}
+.product-list ul li .detail span, .product-list ul li .detail span:hover{text-decoration: none; display: block;color: #888;margin-bottom: 5px;}
+.product-list ul li a,.product-list ul li a:hover{text-transform: none;color: #888;}
+/*profile page ends here*/
+.title-dash{    background-color: rgb(32, 160, 233);color: #fff; padding: 15px;font-size: 20px;}
+.top-tabs ul li {margin:10px 15px ;}
+.top-tabs ul li a{text-transform: uppercase;font-weight: 600;font-size: 12px;display: block;color: #888;}
+.top-tabs ul li.active a{color:#2ec3ff; }
+.top-tabs .tab-content{padding: 15px;}
+.tabs-inner li a {color: #2ec3ff; background-color: #f2f2f2;padding: 5px;font-weight: 600;}
+.tabs-inner li.active a{background-color: transparent!important;}
