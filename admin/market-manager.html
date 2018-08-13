@@ -18,33 +18,18 @@
       <!-- Navigation-->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
          <a class="navbar-brand" href="index.html">Medmro</a>
+         <a class="nav-link text-center" id="sidenavToggler">
+         <i class="fa fa-fw fa-bars"></i>
+         </a>
          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
          </button>
          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-               <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-                  <a class="nav-link" href="index.html">
-                  <i class="fa fa-fw fa-dashboard"></i>
-                  <span class="nav-link-text">Dashboard</span>
-                  </a>
-               </li>
-               <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-                  <a class="nav-link" href="charts.html">
-                  <i class="fa fa-fw fa-area-chart"></i>
-                  <span class="nav-link-text">Charts</span>
-                  </a>
-               </li>
-               <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-                  <a class="nav-link" href="tables.html">
-                  <i class="fa fa-fw fa-table"></i>
-                  <span class="nav-link-text">Tables</span>
-                  </a>
-               </li>
+             <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
                   <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
-                  <i class="fa fa-fw fa-wrench"></i>
-                  <span class="nav-link-text">Components</span>
+                  <img src="img/inbox.svg"> 
+                  <span class="nav-link-text"> Inbox</span>
                   </a>
                   <ul class="sidenav-second-level collapse" id="collapseComponents">
                      <li>
@@ -55,62 +40,118 @@
                      </li>
                   </ul>
                </li>
-               <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
-                  <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
-                  <i class="fa fa-fw fa-file"></i>
-                  <span class="nav-link-text">Example Pages</span>
+               <li class="nav-item" data-toggle="tooltip" data-placement="right" title="" data-original-title="Components" aria-describedby="tooltip160401">
+                  <a class="nav-link nav-link-collapse" data-toggle="collapse" href="#collapseComponents-a" data-parent="#exampleAccordion" aria-expanded="true">
+                  <img src="img/app.svg"> 
+                  <span class="nav-link-text"> Apps</span>
                   </a>
-                  <ul class="sidenav-second-level collapse" id="collapseExamplePages">
-                     <li>
-                        <a href="login.html">Login Page</a>
-                     </li>
-                     <li>
-                        <a href="register.html">Registration Page</a>
-                     </li>
-                     <li>
-                        <a href="forgot-password.html">Forgot Password Page</a>
-                     </li>
-                     <li>
-                        <a href="blank.html">Blank Page</a>
-                     </li>
-                  </ul>
-               </li>
-               <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
-                  <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
-                  <i class="fa fa-fw fa-sitemap"></i>
-                  <span class="nav-link-text">Menu Levels</span>
-                  </a>
-                  <ul class="sidenav-second-level collapse" id="collapseMulti">
-                     <li>
-                        <a href="#">Second Level Item</a>
-                     </li>
-                     <li>
-                        <a href="#">Second Level Item</a>
-                     </li>
-                     <li>
-                        <a href="#">Second Level Item</a>
-                     </li>
-                     <li>
-                        <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2">Third Level</a>
-                        <ul class="sidenav-third-level collapse" id="collapseMulti2">
-                           <li>
-                              <a href="#">Third Level Item</a>
-                           </li>
-                           <li>
-                              <a href="#">Third Level Item</a>
-                           </li>
-                           <li>
-                              <a href="#">Third Level Item</a>
-                           </li>
-                        </ul>
-                     </li>
-                  </ul>
-               </li>
-               <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
-                  <a class="nav-link" href="#">
-                  <i class="fa fa-fw fa-link"></i>
-                  <span class="nav-link-text">Link</span>
-                  </a>
+                  <div class="scroll-bar">
+                    <ul class="sidenav-second-level sub-item collapse show" id="collapseComponents-a" style="">
+                       <li class="controls clearfix">
+                          <span><img src="img/pin.svg"> Pinned Apps</span>
+                          <span><a href="#">Edit</a></span>
+                       </li>
+                       <li>
+                          <a href="market-manager.html">
+                          <img src="img/supplier.svg"> <span>Supplier Marketplace</span></a>
+                       </li>
+                       <li>
+                          <a href="support.html">
+                          <img src="img/support.svg"><span>Support</span></a>
+                       </li>
+                       <li>
+                          <a href="profile.html">
+                          <img src="img/profile.svg"><span>Profile</span></a>
+                       </li>
+                       <li>
+                          <a href="offer.html">
+                          <img src="img/offer.svg"><span>Supplier Offer View</span></a>
+                       </li>
+                       <li>
+                          <a href="marketplace.html">
+                          <img src="img/market.svg"><span>Marketplace</span></a>
+                       </li>
+                       <li>
+                          <a href="search.html">
+                          <img src="img/market.svg"><span>Search</span></a>
+                       </li>
+                       <li>
+                          <a href="teams.html">
+                          <img src="img/teams.svg"><span>Teams</span></a>
+                       </li>
+                       <li>
+                          <a href="Profile.html"><img src="img/app-manager.svg"><span>App Manager</span></a>
+                       </li>
+                    </ul>
+                    <ul class="installed-app">
+                       <li class="controls clearfix bod-top">
+                          <span><img src="img/pin.svg"> Installed Apps</span>
+                          <span><a href="#">Edit</a></span>
+                       </li>
+                       <!-- installed app -->
+                       <li>
+                          <a href="app-madermo.html"><img src="img/app-manager.svg"><span>App Manager</span><sub>Medrmo</sub> </a>
+                       </li>
+                       <li>
+                          <a href="app-atore.html"><img src="img/app-store.svg"><span>App Store</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="app-atore.html"><img src="img/create-documents.svg"><span>Create Documents</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="app-atore.html"><img src="img/document-manager.svg"><span>Document Manager</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="app-atore.html"><img src="img/documents.svg"><span>Create Documents</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="app-atore.html"><img src="img/market.svg"><span>Marketplace</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="app-atore.html"><img src="img/network.svg"><span>Network</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="app-atore.html"><img src="img/offer-manager.svg"><span>Offer Manager</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="app-atore.html"><img src="img/order.png"><span>Order Colaboration</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="app-atore.html"><img src="img/procure.png"><span>ProcureportApp</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="market-manager.html">
+                          <img src="img/supplier.svg"> <span>Supplier Marketplace</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="support.html">
+                          <img src="img/support.svg"><span>Support</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="profile.html">
+                          <img src="img/profile.svg"><span>Profile</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="offer.html">
+                          <img src="img/offer.svg"><span>Supplier Offer View</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="marketplace.html">
+                          <img src="img/market.svg"><span>Marketplace</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="search.html">
+                          <img src="img/market.svg"><span>Search</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="teams.html">
+                          <img src="img/teams.svg"><span>Teams</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                         <a href="#" class="app-store-button">Get more apps</a>
+                       </li>
+                    </ul>
+                  </div>
                </li>
             </ul>
             <ul class="navbar-nav sidenav-toggler">
@@ -138,6 +179,11 @@
               <div id="home" class="tab-pane fade in active show">
                <div class="row">
                  <div class="col-sm-12 col-md-12">
+                  <div class="control-action">
+                    <a href="#" class="btn-primary-border"><i class="fa fa-ellipsis-h"></i> </a>
+                    <a href="#" class="btn-primary-border">Create Product</a>
+                    <a href="#" class=" btn-success">Upload Products</a>
+                  </div>
                    <div class="tabs-inner">
                      <ul class="nav nav-tabs">
                       <li class="active show"><a data-toggle="tab" href="#all">All (2)</a></li>
