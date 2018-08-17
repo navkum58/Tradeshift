@@ -104,7 +104,47 @@ $( document ).ready(function() {
                 $('#industry').hide(500);
   });    
   /*select-company size*/
+      /*select-action*/
+
+   $('.action-btn').click(function () {
+                $('.overlay-full').show();
+                $('#actions-side').show();
+            });
+      $('.close-sidebar').click(function () {
+                $('.overlay-full').hide();
+                $('#actions-side').hide();
+            });
+
+  $('#actions-side menu li button').click(function(e){
+     var size = $(e.target).text();
+     console.log(size);
+     $('.action-btn').val(size);
+      $('#actions-side menu li button').removeClass('active');
+              $(this).addClass('active');
+                $('.overlay-full').hide();
+                $('#actions-side').hide(500);
+                $('.currency').hide(500);
+  });    
+  /*select-company size*/
+  $('.download-block').click(function(){
+      $('.overlay-full').show();
+      $('.download-all').show();
+  });
+   $('.close-sidebar').click(function () {
+                $('.overlay-full').hide();
+                $('.download-all').hide();
+            });
         /*select-company size*/
+          /*currency*/
+  $('.currency-selector').click(function(){
+      $('.overlay-full').show();
+      $('.currency').show();
+  });
+   $('.close-sidebar').click(function () {
+                $('.overlay-full').hide();
+                $('.currency').hide(500);
+            });
+        /*select-currency*/
 
    $('.lanuage-selector').focus(function () {
                 $('.overlay-full').show();
@@ -125,6 +165,8 @@ $( document ).ready(function() {
                 $('#language').hide(500);
   });  
 });
+
+
 (function($) {
   "use strict"; // Start of use strict
   // Configure tooltips for collapsed side navigation
@@ -170,5 +212,28 @@ $( document ).ready(function() {
     event.preventDefault();
   });
   /*wizard css*/
+  //select all checkboxes
+$("#select_all").change(function(){  //"select all" change 
+    $(".checkbox").prop('checked', $(this).prop("checked")); //change all ".checkbox" checked status
+});
+
+//".checkbox" change 
+$('.checkbox').change(function(){ 
+    //uncheck "select all", if one of the listed checkbox item is unchecked
+    if(false == $(this).prop("checked")){ //if this item is unchecked
+        $("#select_all").prop('checked', false); //change "select all" checked status to false
+    }
+    //check "select all" if all checkbox items are checked
+    if ($('.checkbox:checked').length == $('.checkbox').length ){
+        $("#select_all").prop('checked', true);
+    }
+});
+$('.action-btn-product').click(function(){
+  $('.create-product ').removeClass('hide');
+});
+$('.close-dialog').click(function(){
+  $('.create-product ').addClass('hide');
+
+});
 
 })(jQuery); // End of use strict

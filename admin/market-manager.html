@@ -6,11 +6,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="">
       <meta name="author" content="">
-      <title> Medmro Profile </title>
+      <title> Medmro Market-Manager </title>
       <!-- Bootstrap core CSS-->
       <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <!-- Custom fonts for this template-->
       <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <!-- Page level plugin CSS-->
+        <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
       <!-- Custom styles for this template-->
       <link href="css/sb-admin.css" rel="stylesheet">
    </head>
@@ -180,8 +182,8 @@
                <div class="row">
                  <div class="col-sm-12 col-md-12">
                   <div class="control-action">
-                    <a href="#" class="btn-primary-border"><i class="fa fa-ellipsis-h"></i> </a>
-                    <a href="#" class="btn-primary-border">Create Product</a>
+                    <a href="#" class="btn-primary-border action-btn" style="padding: .5rem .9rem;" ><i class="fa fa-ellipsis-h"></i> </a>
+                    <a href="#" class="btn-primary-border action-btn-product" data-toggle="modal" data-target="#create-modal">Create Product</a>
                     <a href="#" class=" btn-success">Upload Products</a>
                   </div>
                    <div class="tabs-inner">
@@ -195,8 +197,43 @@
 
                     <div class="tab-content">
                       <div id="all" class="tab-pane fade in active show">
-                        <h3>HOME</h3>
-                        <p>Some content.</p>
+                        <div class="table-block">
+                           <div class="table-responsive">
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                              <thead>
+                                <tr>
+                                  <th><input type="checkbox" name="" id="select_all"></th>
+                                  <th>UPC</th>
+                                  <th>Name</th>
+                                  <th>Price/Rate (CNY)</th>
+                                  <th>Category</th>
+                                  <th>Variant Group</th>
+                                  <th>Status</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td><input type="checkbox" name="" class="checkbox" ></td>
+                                  <td>123</td>
+                                  <td>Madermo</td>
+                                  <td>143.00</td>
+                                  <td>Test</td>
+                                  <td>Test</td>
+                                  <td>Active</td>
+                                </tr>
+                                <tr>
+                                  <td><input type="checkbox" name="" class="checkbox" ></td>
+                                  <td>123</td>
+                                  <td>Madermo</td>
+                                  <td>123.00</td>
+                                  <td>Tefst</td>
+                                  <td>Tesut</td>
+                                  <td>Active</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
                       </div>
                       <div id="valid" class="tab-pane fade">
                         <h3>Menu 1</h3>
@@ -230,18 +267,108 @@
             </div>
          </div>
          <!-- /.container-fluid-->
-         <!-- /.content-wrapper-->
-         <footer class="sticky-footer">
-            <div class="container">
-               <div class="text-center">
-                  <small>Copyright © Your Website 2018</small>
-               </div>
+          <div class="create-product hide">
+            <div class="title-modal">
+              <h4>Create Product</h4>
+              <button type="button" class="close close-dialog" data-dismiss="modal">&times;</button>
             </div>
-         </footer>
+            <div class="content-block">
+              <div class="title-inner">
+                Details
+              </div>
+              <div class="row">
+                <div class="col-sm-8">
+                  <div class="form-group">
+                  <label>Name</label>
+                  <input type="text" class="form-control" name="">
+                  </div>
+                  <div class="form-group">
+                    <label>DESCRIPTION (OPTIONAL)</label>
+                    <textarea class="form-control" cols="8" rows="4" style="min-height: 125px;"></textarea>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="form-group">
+                    <label>UPC</label>
+                     <input type="text" class="form-control" name="">
+                  </div>
+                  <div class="form-group">
+                    <label>UNSPSC COMMODITY CODE</label>
+                     <input type="text" class="form-control" name="">
+                  </div>
+                  <div class="form-group">
+                    <label>YOUR CATEGORY NAME (OPTIONAL)</label>
+                     <input type="text" class="form-control" name="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-block">
+              <div class="title-inner">
+                Pricing
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="form-group">
+                  <label>BASE PRICE (EUR)</label>
+                  <input type="text" class="form-control" name="">
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="form-group">
+                    <label>PER BASE QUANTITY</label>
+                     <input type="text" class="form-control" name="" placeholder="1">
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="form-group">
+                    <label>UNIT OF MEASURE</label>
+                     <input type="text" class="form-control" name="" placeholder="EA-each">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <hr>
+                <div class="desc-text">
+                <div class="edit-btn right-btn-set">
+                           <a href="#">Edit</a>
+                        </div>
+                <p>Lot Size</p>        
+                <p>Users can order this product in lots of 1 <b>EA - each</b> </p>
+                </div>
+                <hr>
+                <div class="desc-text">
+                <div class="edit-btn right-btn-set">
+                           <a href="#">Edit</a>
+                        </div>
+                <p>Minimum order quantity</p>        
+                <p>Users can order this product in lots of 1 <b>EA - each</b> </p>
+                </div>
+              </div>
+            </div>
+            <div class="content-block">
+              <div class="title-inner">
+                Logistics
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="form-group">
+                  <label>LEAD TIME (IN DAYS) (OPTIONAL)</label>
+                  <input type="text" class="form-control" name="">
+                  </div>
+                </div>
+                
+              </div>
+              
+            </div>
+          </div>
          <!-- Scroll to Top Button-->
          <a class="scroll-to-top rounded" href="#page-top">
          <i class="fa fa-angle-up"></i>
          </a>
+
+
          <!-- Logout Modal-->
          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -260,13 +387,380 @@
                </div>
             </div>
          </div>
+      <div class="overlay-full hide"></div>
+        <div  id="actions-side" class=" right-bar hide">
+                 <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Actions</span>  <i class="fa fa-close"></i></a>
+          <menu>
+          <li>
+            <button data-ts="Button" class="hide" type="button" style="display: none;">
+              <span class="hide" t="" t-context="product flow button">Create product</span>
+            </button>
+          </li>
+         
+          <li>
+            <button class="download-block" type="button">
+              <span t="" t-context="product flow action">Download products</span>
+               <i class="fa fa-arrow-right"></i>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="btn disabled">Edit UNSPSC code (0)</button>
+          </li>
+          <!----><li ng-controller="SMM.DeactivateProductsController as deactivateProductsCtrl" ng-if="mainCtrl.model.isWorkingMode">
+            <button type="button" class="btn disabled">Deactivate products (0)</button>
+          </li><!---->
+          <!----><li ng-controller="SMM.DeleteProductsController as deleteProductsCtrl" ng-if="mainCtrl.model.isWorkingMode">
+            <button type="button" class="btn disabled">Delete products (0)</button>
+          </li><!---->
+          <li>
+            <button  class="currency-selector">
+              <span t="" t-context="coding panel button">Change default currency</span>
+             <i class="fa fa-arrow-right"></i>
+            </button>
+          </li>
+          
+        </menu>
+      </div>
+
+         <div  id="actions-side" class=" right-bar download-all hide">
+                 <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Download Products</span>  <i class="fa fa-close"></i></a>
+          <menu>
+          <li>
+            <button data-ts="Button" class="hide" type="button" style="display: none;">
+              <span class="hide" t="" t-context="product flow button">Create product</span>
+            </button>
+          </li>
+         
+          <li>
+            <button type="button" class="btn disabled">Download  selected products( 0)</button>
+          </li>
+          <li>
+            <button class="download-block" type="button">
+              <span t="" t-context="product flow action">Download all products (2)</span>
+               <i class="fa fa-arrow-right"></i>
+            </button>
+          </li>
+          <li>
+            <a href="#" class="btn btn-primary-border btn-block">Download</a>
+          </li>
+        </menu>
+      </div>
+         <div  id="actions-side" class=" right-bar currency hide">
+                 <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Download Products</span>  <i class="fa fa-close"></i></a>
+          <menu data-ts="Menu" data-ts-spirit="ts.ui.MenuSpirit" class="ts-menu ts-spirit">
+    
+   <li ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-afn"><span ng-bind="_currency">AFN</span></button></li>
+    
+   <li    class="ts-checked"><button class="active"><span ng-bind="_currency">EUR</span></button></li>
+    
+   <li   ><button ><span ng-bind="_currency">ALL</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-dzd"><span ng-bind="_currency">DZD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-usd"><span ng-bind="_currency">USD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-aoa"><span ng-bind="_currency">AOA</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-xcd"><span ng-bind="_currency">XCD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-xxx"><span ng-bind="_currency">XXX</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-ars"><span ng-bind="_currency">ARS</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-amd"><span ng-bind="_currency">AMD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-awg"><span ng-bind="_currency">AWG</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-aud"><span ng-bind="_currency">AUD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-azn"><span ng-bind="_currency">AZN</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-bsd"><span ng-bind="_currency">BSD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-bhd"><span ng-bind="_currency">BHD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-bdt"><span ng-bind="_currency">BDT</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-bbd"><span ng-bind="_currency">BBD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-byn"><span ng-bind="_currency">BYN</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-bzd"><span ng-bind="_currency">BZD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-xof"><span ng-bind="_currency">XOF</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-bmd"><span ng-bind="_currency">BMD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-btn"><span ng-bind="_currency">BTN</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-bob"><span ng-bind="_currency">BOB</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-bam"><span ng-bind="_currency">BAM</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-bwp"><span ng-bind="_currency">BWP</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-nok"><span ng-bind="_currency">NOK</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-brl"><span ng-bind="_currency">BRL</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-bnd"><span ng-bind="_currency">BND</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-bgn"><span ng-bind="_currency">BGN</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-bif"><span ng-bind="_currency">BIF</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-khr"><span ng-bind="_currency">KHR</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-xaf"><span ng-bind="_currency">XAF</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-cad"><span ng-bind="_currency">CAD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-cve"><span ng-bind="_currency">CVE</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-kyd"><span ng-bind="_currency">KYD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-clp"><span ng-bind="_currency">CLP</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-cny"><span ng-bind="_currency">CNY</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-cop"><span ng-bind="_currency">COP</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-kmf"><span ng-bind="_currency">KMF</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-cdf"><span ng-bind="_currency">CDF</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-nzd"><span ng-bind="_currency">NZD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-crc"><span ng-bind="_currency">CRC</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-hrk"><span ng-bind="_currency">HRK</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-ang"><span ng-bind="_currency">ANG</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-czk"><span ng-bind="_currency">CZK</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-dkk"><span ng-bind="_currency">DKK</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-djf"><span ng-bind="_currency">DJF</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-dop"><span ng-bind="_currency">DOP</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-egp"><span ng-bind="_currency">EGP</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-ern"><span ng-bind="_currency">ERN</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-etb"><span ng-bind="_currency">ETB</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-fkp"><span ng-bind="_currency">FKP</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-fjd"><span ng-bind="_currency">FJD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-xpf"><span ng-bind="_currency">XPF</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-gmd"><span ng-bind="_currency">GMD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-gel"><span ng-bind="_currency">GEL</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-ghs"><span ng-bind="_currency">GHS</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-gip"><span ng-bind="_currency">GIP</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-gtq"><span ng-bind="_currency">GTQ</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-gbp"><span ng-bind="_currency">GBP</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-gnf"><span ng-bind="_currency">GNF</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-gyd"><span ng-bind="_currency">GYD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-htg"><span ng-bind="_currency">HTG</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-hnl"><span ng-bind="_currency">HNL</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-hkd"><span ng-bind="_currency">HKD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-huf"><span ng-bind="_currency">HUF</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-isk"><span ng-bind="_currency">ISK</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-inr"><span ng-bind="_currency">INR</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-idr"><span ng-bind="_currency">IDR</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-iqd"><span ng-bind="_currency">IQD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-ils"><span ng-bind="_currency">ILS</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-jmd"><span ng-bind="_currency">JMD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-jpy"><span ng-bind="_currency">JPY</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-jod"><span ng-bind="_currency">JOD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-kzt"><span ng-bind="_currency">KZT</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-kes"><span ng-bind="_currency">KES</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-kwd"><span ng-bind="_currency">KWD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-kgs"><span ng-bind="_currency">KGS</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-lak"><span ng-bind="_currency">LAK</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-lbp"><span ng-bind="_currency">LBP</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-zar"><span ng-bind="_currency">ZAR</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-lrd"><span ng-bind="_currency">LRD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-lyd"><span ng-bind="_currency">LYD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-chf"><span ng-bind="_currency">CHF</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-mop"><span ng-bind="_currency">MOP</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-mkd"><span ng-bind="_currency">MKD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-mga"><span ng-bind="_currency">MGA</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-mwk"><span ng-bind="_currency">MWK</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-myr"><span ng-bind="_currency">MYR</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-mvr"><span ng-bind="_currency">MVR</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-mru"><span ng-bind="_currency">MRU</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-mur"><span ng-bind="_currency">MUR</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-mxn"><span ng-bind="_currency">MXN</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-mdl"><span ng-bind="_currency">MDL</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-mnt"><span ng-bind="_currency">MNT</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-mad"><span ng-bind="_currency">MAD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-mzn"><span ng-bind="_currency">MZN</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-mmk"><span ng-bind="_currency">MMK</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-nad"><span ng-bind="_currency">NAD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-npr"><span ng-bind="_currency">NPR</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-nio"><span ng-bind="_currency">NIO</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-ngn"><span ng-bind="_currency">NGN</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-omr"><span ng-bind="_currency">OMR</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-pkr"><span ng-bind="_currency">PKR</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-pab"><span ng-bind="_currency">PAB</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-pgk"><span ng-bind="_currency">PGK</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-pyg"><span ng-bind="_currency">PYG</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-pen"><span ng-bind="_currency">PEN</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-php"><span ng-bind="_currency">PHP</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-pln"><span ng-bind="_currency">PLN</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-qar"><span ng-bind="_currency">QAR</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-ron"><span ng-bind="_currency">RON</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-rub"><span ng-bind="_currency">RUB</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-rwf"><span ng-bind="_currency">RWF</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-wst"><span ng-bind="_currency">WST</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-stn"><span ng-bind="_currency">STN</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-sar"><span ng-bind="_currency">SAR</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-rsd"><span ng-bind="_currency">RSD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-scr"><span ng-bind="_currency">SCR</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-sll"><span ng-bind="_currency">SLL</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-sgd"><span ng-bind="_currency">SGD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-sbd"><span ng-bind="_currency">SBD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-sos"><span ng-bind="_currency">SOS</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-krw"><span ng-bind="_currency">KRW</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-ssp"><span ng-bind="_currency">SSP</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-lkr"><span ng-bind="_currency">LKR</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-shp"><span ng-bind="_currency">SHP</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-srd"><span ng-bind="_currency">SRD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-szl"><span ng-bind="_currency">SZL</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-sek"><span ng-bind="_currency">SEK</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-twd"><span ng-bind="_currency">TWD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-tjs"><span ng-bind="_currency">TJS</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-tzs"><span ng-bind="_currency">TZS</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-thb"><span ng-bind="_currency">THB</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-top"><span ng-bind="_currency">TOP</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-ttd"><span ng-bind="_currency">TTD</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-tnd"><span ng-bind="_currency">TND</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-try"><span ng-bind="_currency">TRY</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-tmt"><span ng-bind="_currency">TMT</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-ugx"><span ng-bind="_currency">UGX</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-uah"><span ng-bind="_currency">UAH</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-aed"><span ng-bind="_currency">AED</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-uyu"><span ng-bind="_currency">UYU</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-uzs"><span ng-bind="_currency">UZS</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-vuv"><span ng-bind="_currency">VUV</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-vef"><span ng-bind="_currency">VEF</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-vnd"><span ng-bind="_currency">VND</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-yer"><span ng-bind="_currency">YER</span></button></li>
+    
+   <li   ><button ng-click="changeDefaultCurrencyCtrl.changeCurrency(_currency)" tst-class="_currency" class="tst-currency tst-zmw"><span ng-bind="_currency">ZMW</span></button></li>
+    
+</menu>
+      </div>
          <!-- Bootstrap core JavaScript-->
          <script src="vendor/jquery/jquery.min.js"></script>
          <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
          <!-- Core plugin JavaScript-->
          <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
          <!-- Custom scripts for all pages-->
-         <script src="js/sb-admin.min.js"></script>
+    <!-- Custom scripts for this page-->
+    <script src="js/sb-admin-datatables.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+         <script src="js/sb-admin.js"></script>
          <script type="text/javascript">
             $(document).ready(function(){
                 $('[data-toggle="popover"]').popover({
@@ -274,6 +768,24 @@
                     trigger : 'hover'
                 });
             });
+            </script>
+            <script type="text/javascript">
+              //select all checkboxes
+$("#select_all").change(function(){  //"select all" change 
+    $(".checkbox").prop('checked', $(this).prop("checked")); //change all ".checkbox" checked status
+});
+
+//".checkbox" change 
+$('.checkbox').change(function(){ 
+    //uncheck "select all", if one of the listed checkbox item is unchecked
+    if(false == $(this).prop("checked")){ //if this item is unchecked
+        $("#select_all").prop('checked', false); //change "select all" checked status to false
+    }
+    //check "select all" if all checkbox items are checked
+    if ($('.checkbox:checked').length == $('.checkbox').length ){
+        $("#select_all").prop('checked', true);
+    }
+});
             </script>
       </div>
    </body>

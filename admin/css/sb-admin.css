@@ -301,6 +301,7 @@ body.sidenav-toggled #mainNav.static-top #sidenavToggler i {
 }
 
 .content-wrapper {
+  position: relative;
   overflow-x: hidden;
   background: white;
 }
@@ -610,7 +611,7 @@ div#myWizard a.btn-primary{background-color: #fdfed5;}
     border: none;
 }
 /*wizard css*/
-.right-bar {position: fixed;right: 0;top: 0;width: 300px;overflow-y: scroll;height: 100%;}
+.right-bar {position: fixed;z-index: 9999; right: 0;top: 0;width: 300px;overflow-y: scroll;height: 100%;background-color: #fff;}
 .right-bar menu {
     padding: 10px;
     margin: 0px;
@@ -1658,3 +1659,64 @@ li.controls span a {
     top:0px;
 }
 .control-action a{display: inline-block;margin-left:5px;}
+#actions-side.right-bar menu li span{padding-left: 0px;}
+#actions-side.right-bar menu li  i{left: inherit;right: 11px;}
+#actions-side.right-bar .disabled{cursor: not-allowed;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: .65;
+    background-color: #eee;
+    color: #888;
+}
+.download-all li a{margin-top: 15px;}
+#actions-side.right-bar.currency menu li span, #actions-side.right-bar.currency menu li span:first-child{padding-left: 10px!important;}
+#actions-side.right-bar.currency menu li:first-child button{padding-left: 11px;}
+ #actions-side.right-bar.currency menu li span:first-child{background-color: inherit; }
+.create-product {
+    position: fixed;
+    top: 120px;
+    width: 100%;
+    background: #f2f2f2;
+    bottom: 0;
+    z-index: 9;
+    right: 0;
+    overflow: auto;
+}
+.create-product .title-modal {
+    background: #fff;
+    display: block;
+    position: fixed;
+    padding: 15px;
+    top: 55px;
+    right: 0;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0px 1px 3px #ccc;
+    z-index: 99;
+    left: 320px;
+}
+body.sidenav-toggled .content-wrapper .create-product .title-modal{
+    left:65px;}
+.create-product .title-modal h4{float: left;}
+.content-block {
+    background: #fff;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 35px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.content-block .title-inner {
+    font-size: 18px;
+    line-height: initial;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.content-block label{text-transform: uppercase;color: #000; font-weight:600;font-size: 12px;}
+.content-block .row{padding: 15px;}
+.desc-text{position: relative;}
+.desc-text .right-btn-set{}
+.desc-text p{margin-bottom: 5px;}
