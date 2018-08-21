@@ -166,7 +166,7 @@
            
          </div>
       </nav>
-      <div class="content-wrapper no-padding">
+      <div class="content-wrapper no-padding" style="background-color: #f5f5f5;">
          <div class="container-fluid no-padding">
            <div class="title-dash">Supplier Marketplace Manager</div> 
          </div>
@@ -184,7 +184,7 @@
                   <div class="control-action">
                     <a href="#" class="btn-primary-border action-btn" style="padding: .5rem .9rem;" ><i class="fa fa-ellipsis-h"></i> </a>
                     <a href="#" class="btn-primary-border action-btn-product" data-toggle="modal" data-target="#create-modal">Create Product</a>
-                    <a href="#" class=" btn-success">Upload Products</a>
+                    <a href="#" class=" btn-success btn-success-circle">Upload Products</a>
                   </div>
                    <div class="tabs-inner">
                      <ul class="nav nav-tabs">
@@ -257,12 +257,74 @@
                </div>
               </div>
               <div id="menu1" class="tab-pane fade">
-                <h3>Menu 1</h3>
-                <p>Some content in menu 1.</p>
+                <div class="content-block">
+              <div class="title-inner">
+               <span class="pull-left">Your Marketplace Offer</span> 
+               <span class="pull-right"><a href="#" class="btn btn-success">Published</a></span> 
+               <div class="clearfix"></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-12">
+                  <p>This is your offer on the Tradeshift Marketplace. All Users on the Tradeshft Network are able to find your offered products and services. By letting external search engines (like Google) index and find your offered items you can make your offer truely global.</p>
+                  <hr>
+                </div>
+                <div class="col-sm-12 col-md-12">
+                  <p>OFFERED CURRENCY</p>
+                   <hr>
+                </div>
+
+                 <div class="col-sm-12 col-md-12">
+                  <p>PRODUCTS IN THIS OFFER</p>
+                  <ul class="product-list">
+                    <li><a href="#">Product offered <span>2</span></a></li>
+                    <li><a href="#">Public on web <span>1</span></a></li>
+                    <li><a href="#">Unoffered products <span>--</span></a></li>
+                  </ul>
+                   <hr>
+                </div>
+                <div class="col-sm-12 col-md-12">
+                 <span class="pull-left">Price Visibility</span> 
+                 <span class="pull-right">
+                  <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+                </span> 
+                 <div class="clearfix"></div>
+                 <p>Show price on the Tradeshift Marketplace (you can change this per individualproduct)</p>
+                </div>
+               
+              </div>
+            </div>
               </div>
               <div id="menu2" class="tab-pane fade">
-                <h3>Menu 2</h3>
-                <p>Some content in menu 2.</p>
+                 <div class="table-block">
+                           <div class="table-responsive variant">
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                              <thead>
+                                <tr>
+                                  <th>Variant Group</th>
+                                  <th>Attributes</th>
+                                  <th>Edit</th>
+                                </tr>
+                              </thead>
+                              <tbody style="background-color: #fff;">
+                                <tr>
+                                  <td>Madermo</td>
+                                  <td>Test</td>
+                                  <td><a href="javascript:void(0)" class="btn-primary-border  btn-xs edit-variant-block" >Edit</a></td>
+                                  
+                                </tr>
+                                 <tr>
+                                  <td>Madermo</td>
+                                  <td>Test</td>
+                                  <td><a href="javascript:void(0)" class="btn-primary-border btn-xs edit-variant-block" >Edit</a></td>
+                                  
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
               </div>
             </div>
          </div>
@@ -445,6 +507,25 @@
           </li>
         </menu>
       </div>
+      <!-- edit-variant -->
+
+         <div  id="actions-side" class=" right-bar edit-variant hide">
+                 <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Edit Variant</span>  <i class="fa fa-close"></i></a>
+                 <div class="variant-data">
+                    <div class="form-group">
+                      <label>group Name</label>
+                      <input type="text" class="form-control" placeholder="Test" name="">
+                    </div>
+                     <div class="form-group">
+                      <label>Attributes</label>
+                      <input type="text" class="form-control" placeholder="Length" name="">
+                    </div>
+                     <div class="form-group">
+                      <a href="#" class="btn btn-success btn-success-circle btn-block">Save</a>
+                    </div>
+                    </div>
+                </div>
+      <!-- end edit variant -->
          <div  id="actions-side" class=" right-bar currency hide">
                  <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Download Products</span>  <i class="fa fa-close"></i></a>
           <menu data-ts="Menu" data-ts-spirit="ts.ui.MenuSpirit" class="ts-menu ts-spirit">
