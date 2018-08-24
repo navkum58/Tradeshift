@@ -80,7 +80,7 @@
                           <img src="img/teams.svg"><span>Teams</span></a>
                        </li>
                        <li>
-                          <a href="Profile.html"><img src="img/app-manager.svg"><span>App Manager</span></a>
+                          <a href="app-manager.html"><img src="img/app-manager.svg"><span>App Manager</span></a>
                        </li>
                     </ul>
                     <ul class="installed-app">
@@ -282,38 +282,39 @@
                         <div class="row">
                            <div class="col-md-6 col-sm-6">
                               <div class="form-group">
-                                 <label>Industry</label>
-                                 <input type="text" class="form-control" name="">
+                                 <label>Industry</label> 
+                                 <input type="text" class="form-control select-industry" placeholder="-Select industry" name="" >
+                     
                               </div>
                            </div>
                            <div class="col-md-6 col-sm-6">
                               <div class="form-group">
-                                 <label>Company Size</label>
-                                 <input type="text" class="form-control" name="">
+                                 <label>Company Size</label> 
+                                 <input type="text" class="form-control select-company-size" placeholder="-Select company size" name="" >
                               </div>
                            </div>
                               <div class="col-md-6 col-sm-6">
                               <div class="form-group">
                                  <label>COMPANY OWNERSHIP</label>
-                                 <input type="text" class="form-control" name="" placeholder="General partnership">
+                                 <input type="text" class="form-control company-ownership" name="" placeholder="General partnership">
                               </div>
                            </div>
                            <div class="col-md-6 col-sm-6">
                               <div class="form-group">
                                  <label>SHARE CAPITAL</label>
-                                 <input type="text" class="form-control" name="" placeholder="Select">
+                                 <input type="text" class="form-control share-capital" name="" placeholder="Select">
                               </div>
                            </div>
                               <div class="col-md-6 col-sm-6">
                               <div class="form-group">
                                  <label>COMPANY ADDRESS</label>
-                                 <input type="text" class="form-control" name="" placeholder="CN">
+                                 <input type="text" class="form-control company-address" name="" placeholder="CN">
                               </div>
                            </div>
                            <div class="col-md-6 col-sm-6">
                               <div class="form-group">
                                  <label>Registration Address</label>
-                                 <input type="text" class="form-control" name="" placeholder="Select">
+                                 <input type="text" class="form-control registration-address" name="" placeholder="Select">
                               </div>
                            </div>
                              <div class="col-md-6 col-sm-6">
@@ -524,6 +525,8 @@
          <a class="scroll-to-top rounded" href="#page-top">
          <i class="fa fa-angle-up"></i>
          </a>
+
+      <div class="overlay-full hide"></div>
          <!-- Logout Modal-->
          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -542,13 +545,189 @@
                </div>
             </div>
          </div>
+           <div  id="company-size" class=" right-bar hide">
+         <a href="JavaScript:void(0)" class="close-sidebar"><i class="fa fa-close"></i></a>
+         <menu>
+            <li id="key467774217-0" class="ts-checked"><button class="active"><span>- Select company size -</span><i class="fa fa-check"></i></button></li>
+            <li id="key467774217-1"><button><span>1 employee (just me)</span><i class="fa fa-check"></i></button></li>
+            <li id="key467774217-2"><button><span>2-15 employees</span><i class="fa fa-check"></i></button></li>
+            <li id="key467774217-3"><button><span>16-49 employees</span><i class="fa fa-check"></i></button></li>
+            <li id="key467774217-4"><button><span>50-99 employees</span><i class="fa fa-check"></i></button></li>
+            <li id="key467774217-5"><button><span>100-249 employees</span><i class="fa fa-check"></i></button></li>
+            <li id="key467774217-6"><button><span>250-499 employees</span><i class="fa fa-check"></i></button></li>
+            <li id="key467774217-7"><button><span>500-999 employees</span><i class="fa fa-check"></i></button></li>
+            <li id="key467774217-8"><button><span>1,000-4,999 employees</span><i class="fa fa-check"></i></button></li>
+            <li id="key467774217-9"><button><span>5,000-9,999 employees</span><i class="fa fa-check"></i></button></li>
+            <li id="key467774217-10"><button><span>10,000 or more employees</span><i class="fa fa-check"></i></button></li>
+         </menu>
+      </div>
+      <!-- company ownership -->
+      <div  id="company-ownership" class=" right-bar hide">
+         <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Company Ownership</span>  <i class="fa fa-close"></i></a>
+         <menu>
+            <li><button class="active"><span>- Select company ownership -</span><i class="fa fa-check"></i></button></li>
+            <li><button><span>Hide ownership</span><i class="fa fa-check"></i></button></li>
+            <li id="key467774217-2"><button><span>Private limited company</span><i class="fa fa-check"></i></button></li>
+            <li id="key467774217-3"><button><span>Public limited company</span><i class="fa fa-check"></i></button></li>
+           
+         </menu>
+      </div>
+      <!-- company ownership -->
+      <div  id="share-capital" class=" right-bar hide">
+         <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Set Share Capital</span>  <i class="fa fa-close"></i></a>
+         <div class="col-md-12">
+         <div class="form-group">
+           <label>CAPITAL AMOUNT</label>
+           <input type="text" class="form-control" placeholder="Share Company Capital" name="">
+         </div>
+         <div class="form-group">
+           <label>Currency</label>
+           <input type="text" class="form-control" placeholder="CNY" name="">
+         </div>
+         <div class="form-group">
+          <a href="#" class="btn btn-primary btn-circle btn-block">Save</a>
+         </div>
+         <div class="form-group">
+          <a href="#" class=" btn-primary-border btn-block cancel-popup" style="text-align: center;">Cancel</a>
+         </div>
+         </div>
+      </div>
+       <!-- company address -->
+      <div  id="company-address" class=" right-bar hide">
+         <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Set Share Capital</span>  <i class="fa fa-close"></i></a>
+         <div class="col-md-12">
+         <div class="form-group">
+           <label>Country</label>
+           <input type="text" class="form-control" disabled="" placeholder="China" name="">
+         </div>
+         <div class="form-group">
+           <label>POSTBOX (OPTIONAL)</label>
+           <input type="text" class="form-control" placeholder="CNY" name="">
+         </div>
+         <div class="form-group">
+           <label>State</label>
+           <input type="text" class="form-control" placeholder="江苏省" name="">
+         </div>
+         <div class="form-group">
+           <label>City</label>
+           <input type="text" class="form-control" placeholder="江苏省" name="">
+         </div>
+         <div class="form-group">
+           <label>Street</label>
+           <input type="text" class="form-control" placeholder="Sip" name="">
+         </div>
+         <div class="form-group">
+           <label>ZIP CODE (OPTIONAL)</label>
+           <input type="text" class="form-control" placeholder="21002200" name="">
+         </div>
+         <div class="form-group">
+          <span style="float: left;padding-right: 10px;">Show on Map</span>
+           <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+         </div>
+         <div class="form-group">
+          <a href="#" class="btn btn-primary btn-circle btn-block save-data">Save</a>
+         </div>
+         </div>
+      </div>
+             <!-- registration address -->
+      <div  id="registration-address" class=" right-bar hide">
+         <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Choose</span>  <i class="fa fa-close"></i></a>
+         <div class="col-md-12">
+         <div class="form-group">
+           <label>Country</label>
+           <input type="text" class="form-control" disabled="" placeholder="China" name="">
+         </div>
+         <div class="form-group">
+           <label>POSTBOX (OPTIONAL)</label>
+           <input type="text" class="form-control" placeholder="CNY" name="">
+         </div>
+         <div class="form-group">
+           <label>State</label>
+           <input type="text" class="form-control" placeholder="江苏省" name="">
+         </div>
+         <div class="form-group">
+           <label>City</label>
+           <input type="text" class="form-control" placeholder="江苏省" name="">
+         </div>
+         <div class="form-group">
+           <label>Street</label>
+           <input type="text" class="form-control" placeholder="Sip" name="">
+         </div>
+         <div class="form-group">
+           <label>ZIP CODE (OPTIONAL)</label>
+           <input type="text" class="form-control" placeholder="21002200" name="">
+         </div>
+        
+         <div class="form-group">
+          <a href="#" class="btn btn-primary btn-circle btn-block save-data">Save</a>
+         </div>
+         </div>
+      </div>
+       <div  id="industry" class="hide right-bar">
+         <a href="JavaScript:void(0)" class="close-sidebar"><i class="fa fa-close"></i></a>
+         <menu>
+            <li id="key507307881-0"><button class="active"><span>Select industry</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-1"><button><span>Academia</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-2"><button><span>Animal care</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-3"><button><span>Agriculture</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-4"><button><span>Apparel</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-5"><button><span>Banking</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-6"><button><span>Beauty and Cosmetics</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-7"><button><span>Biotechnology</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-8"><button><span>Business Services</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-9"><button><span>Chemicals</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-10"><button><span>Communications</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-11"><button><span>Construction</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-12"><button><span>Consulting</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-13"><button><span>Distribution</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-14"><button><span>Education</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-15"><button><span>Electronics</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-16"><button><span>Energy</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-17"><button><span>Engineering</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-18"><button><span>Entertainment</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-19"><button><span>Environmental</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-20"><button><span>Finance</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-21"><button><span>Food and Beverage</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-22"><button><span>Government and Public services</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-23"><button><span>Grant and Fundraising</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-24"><button><span>Healthcare</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-25"><button><span>Hospitality</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-26"><button><span>HR and Recruitment</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-27"><button><span>Insurance</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-28"><button><span>Legal Services</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-29"><button><span>Machinery</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-30"><button><span>Manufacturing</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-31"><button><span>Media</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-32"><button><span>Medical Equipment and Supplies</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-33"><button><span>Not For Profit</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-34"><button><span>Oil and Gas</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-35"><button><span>Pharmaceutical</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-36"><button><span>Real Estate</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-37"><button><span>Recreation</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-38"><button><span>Recruitment</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-39"><button><span>Research (non-academia)</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-40"><button><span>Retail</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-41"><button><span>Security Services</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-42"><button><span>Shipping</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-43"><button><span>Software and IT</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-44"><button><span>Technology Hardware</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-45"><button><span>Telecommunications</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-46"><button><span>Transportation</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-47"><button><span>Travel</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-48"><button><span>Utilities</span><i class="fa fa-check"></i></button></li>
+            <li id="key507307881-49"><button><span>Other</span><i class="fa fa-check"></i></button></li>
+         </menu>
+      </div>
          <!-- Bootstrap core JavaScript-->
          <script src="vendor/jquery/jquery.min.js"></script>
          <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
          <!-- Core plugin JavaScript-->
          <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
          <!-- Custom scripts for all pages-->
-         <script src="js/sb-admin.min.js"></script>
+         <script src="js/sb-admin.js"></script>
          <script type="text/javascript">
             $(document).ready(function(){
                 $('[data-toggle="popover"]').popover({

@@ -269,4 +269,76 @@ $('#carouselExample').on('slide.bs.carousel', function (e) {
         }
     }
 });
+  /*select-country*/
+
+   $('.company-ownership').focus(function () {
+                $('.overlay-full').show();
+                $('#company-ownership').show();
+            });
+      $('.close-sidebar').click(function () {
+                $('.overlay-full').hide();
+                $('#company-ownership').hide();
+            });
+
+  $('#company-ownership menu li button').click(function(e){
+     var txt = $(e.target).text();
+     console.log(txt);
+     $('.company-ownership').val(txt);
+    $('#company-ownership menu li button').removeClass('active');
+    $(this).addClass('active');
+                $('.overlay-full').hide();
+                $('#company-ownership').hide(500);
+  });    
+  /*select-country*/
+    /*share capitol*/
+
+   $('.share-capital').focus(function () {
+                $('.overlay-full').show();
+                $('#share-capital').show();
+            });
+      $('.cancel-popup').click(function () {
+                $('.overlay-full').hide();
+                $('.right-bar').hide();
+            });
+
+  /*$('#share-capital menu li button').click(function(e){
+     var txt = $(e.target).text();
+     console.log(txt);
+     $('.company-ownership').val(txt);
+    $('#company-ownership menu li button').removeClass('active');
+    $(this).addClass('active');
+                $('.overlay-full').hide();
+                $('#company-ownership').hide(500);
+  }); */   
+  /*select-country*/
+
+   $('.company-address').focus(function () {
+                $('.overlay-full').show();
+                $('#company-address').show();
+            });
+      $('.close-sidebar').click(function () {
+                $('.overlay-full').hide();
+                $('.right-bar').hide();
+            });
+      $('.save-data').click(function () {
+                $('.overlay-full').hide();
+                $('.right-bar').hide();
+            });
+
+     $('.registration-address').focus(function () {
+                $('.overlay-full').show();
+                $('#registration-address').show();
+            });
+      $('.close-sidebar').click(function () {
+                $('.overlay-full').hide();
+                $('.right-bar').hide();
+            });
+      $('.save-data').click(function () {
+                $('.overlay-full').hide();
+                $('.right-bar').hide();
+            });
+  $('.ts-support').click(function(){
+    $('.support-list').addClass('hide');
+    $('.support-main').removeClass('hide');
+  });                  
 })(jQuery); // End of use strict
