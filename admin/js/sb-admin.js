@@ -340,5 +340,54 @@ $('#carouselExample').on('slide.bs.carousel', function (e) {
   $('.ts-support').click(function(){
     $('.support-list').addClass('hide');
     $('.support-main').removeClass('hide');
-  });                  
+  }); 
+
+  $('.add-filter').click(function(){
+     $('.overlay-full').show();
+                $('#add-filter').show();      
+  });                 
+  $('.relation-block').click(function(){
+      $('.overlay-full').show();
+                $('#relation-filter').show();    
+  });
+
+  $('#relation-filter menu li button').click(function(){
+     $('#relation-filter menu li button').removeClass('active');
+              $(this).addClass('active');
+ });
+
+  $('.apply').click(function(){
+     $('.overlay-full').hide();
+    $('.right-bar').hide(500); 
+  });
+
+  $('.company-detail').click(function(){
+    $('.overlay-full').show();
+    $('#company-detail').show();   
+  });
+
+
+  $('.edit-company').click(function(){
+    $('.overlay-full').show();
+    $('#edit-company').show();   
+  });
+  $('.create-docs').click(function(){
+    $('.overlay-full').show();
+    $('#create-docs').show();   
+  });
+
+  $('.categorize').click(function(){
+    $('.overlay-full').show();
+    $('#categorize').show();   
+  });
+  $('.properties').click(function(){
+    $('.overlay-full').show();
+    $('#properties').show();   
+  });
+   $('.invite-company-btn').click(function(){
+    $('.overlay-full').show();
+    $('#invite-company').show();   
+  });
+
+
 })(jQuery); // End of use strict

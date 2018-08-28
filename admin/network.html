@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title> Medmro Market-Manager </title>
+      <!-- Bootstrap core CSS-->
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom fonts for this template-->
+      <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <!-- Page level plugin CSS-->
+        <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+      <!-- Custom styles for this template-->
+      <link href="css/sb-admin.css" rel="stylesheet">
+   </head>
+   <body class="fixed-nav sticky-footer bg-dark" id="page-top">
+      <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+         <a class="navbar-brand" href="index.html">Medmro</a>
+         <a class="nav-link text-center" id="sidenavToggler">
+         <i class="fa fa-fw fa-bars"></i>
+         </a>
+         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarResponsive">
+             <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+               <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+                  <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+                  <img src="img/inbox.svg"> 
+                  <span class="nav-link-text"> Inbox</span>
+                  </a>
+                  <ul class="sidenav-second-level collapse" id="collapseComponents">
+                     <li>
+                        <a href="navbar.html">Navbar</a>
+                     </li>
+                     <li>
+                        <a href="cards.html">Cards</a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="nav-item" data-toggle="tooltip" data-placement="right" title="" data-original-title="Components" aria-describedby="tooltip160401">
+                  <a class="nav-link nav-link-collapse" data-toggle="collapse" href="#collapseComponents-a" data-parent="#exampleAccordion" aria-expanded="true">
+                  <img src="img/app.svg"> 
+                  <span class="nav-link-text"> Apps</span>
+                  </a>
+                  <div class="scroll-bar">
+                    <ul class="sidenav-second-level sub-item collapse show" id="collapseComponents-a" style="">
+                       <li class="controls clearfix">
+                          <span><img src="img/pin.svg"> Pinned Apps</span>
+                          <span><a href="#">Edit</a></span>
+                       </li>
+                       <li>
+                          <a href="market-manager.html">
+                          <img src="img/supplier.svg"> <span>Supplier Marketplace</span></a>
+                       </li>
+                       <li>
+                          <a href="support.html">
+                          <img src="img/support.svg"><span>Support</span></a>
+                       </li>
+                       <li>
+                          <a href="profile.html">
+                          <img src="img/profile.svg"><span>Profile</span></a>
+                       </li>
+                       <li>
+                          <a href="offer.html">
+                          <img src="img/offer.svg"><span>Supplier Offer View</span></a>
+                       </li>
+                       <li>
+                          <a href="marketplace.html">
+                          <img src="img/market.svg"><span>Marketplace</span></a>
+                       </li>
+                       <li>
+                          <a href="search.html">
+                          <img src="img/market.svg"><span>Search</span></a>
+                       </li>
+                       <li>
+                          <a href="teams.html">
+                          <img src="img/teams.svg"><span>Teams</span></a>
+                       </li>
+                       <li>
+                          <a href="app-manager.html"><img src="img/app-manager.svg"><span>App Manager</span></a>
+                       </li>
+                    </ul>
+                    <ul class="installed-app">
+                       <li class="controls clearfix bod-top">
+                          <span><img src="img/pin.svg"> Installed Apps</span>
+                          <span><a href="#">Edit</a></span>
+                       </li>
+                       <!-- installed app -->
+                       <li>
+                          <a href="app-madermo.html"><img src="img/app-manager.svg"><span>App Manager</span><sub>Medrmo</sub> </a>
+                       </li>
+                       <li>
+                          <a href="app-atore.html"><img src="img/app-store.svg"><span>App Store</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="app-atore.html"><img src="img/create-documents.svg"><span>Create Documents</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="app-atore.html"><img src="img/document-manager.svg"><span>Document Manager</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="app-atore.html"><img src="img/documents.svg"><span>Create Documents</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="app-atore.html"><img src="img/market.svg"><span>Marketplace</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="app-atore.html"><img src="img/network.svg"><span>Network</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="app-atore.html"><img src="img/offer-manager.svg"><span>Offer Manager</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="app-atore.html"><img src="img/order.png"><span>Order Colaboration</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="app-atore.html"><img src="img/procure.png"><span>ProcureportApp</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="market-manager.html">
+                          <img src="img/supplier.svg"> <span>Supplier Marketplace</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="support.html">
+                          <img src="img/support.svg"><span>Support</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="profile.html">
+                          <img src="img/profile.svg"><span>Profile</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="offer.html">
+                          <img src="img/offer.svg"><span>Supplier Offer View</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="marketplace.html">
+                          <img src="img/market.svg"><span>Marketplace</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="search.html">
+                          <img src="img/market.svg"><span>Search</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                          <a href="teams.html">
+                          <img src="img/teams.svg"><span>Teams</span><sub>Medrmo</sub></a>
+                       </li>
+                       <li>
+                         <a href="#" class="app-store-button">Get more apps</a>
+                       </li>
+                    </ul>
+                  </div>
+               </li>
+            </ul>
+            <ul class="navbar-nav sidenav-toggler">
+               <li class="nav-item">
+                  <a class="nav-link text-center" id="sidenavToggler">
+                  <i class="fa fa-fw fa-angle-left"></i>
+                  </a>
+               </li>
+            </ul>
+           <ul class="navbar-nav search-block app-manager network">
+              <li>Network</li>
+              <li></li>
+
+            </ul>
+         </div>
+      </nav>
+      <div class="content-wrapper no-padding network-content">
+         
+         <div class="top-tabs ">
+           <ul class="nav nav-tabs">
+              <li class="active"><a data-toggle="tab" href="#home" class="active show">My Network</a></li>
+              <li><a data-toggle="tab" href="#menu1">Groups</a></li>
+              <li><a data-toggle="tab" href="#menu2">Tradeshift Network</a></li>
+            </ul>
+
+            <div class="tab-content">
+              <div id="home" class="tab-pane fade in active show">
+               <div class="row">
+                 <div class="col-sm-12 col-md-12">
+                    <div class="search-filter">
+                      <i class="fa fa-search"></i>
+                      <input type="text" class="form-control" placeholder="Search..." name="">
+                      <span><a href="#" class="add-filter">+ Add filter</a></span>
+                    </div>
+                    <div class="connections">
+                      Connections (6)
+                    </div>
+                   <div class="table-block">
+                           <div class="table-responsive network-table">
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                              <thead>
+                                <tr>
+                                  <th></th>
+                                  <th></th>
+                                  <th>Name</th>
+                                  <th>Accounting System ID</th>
+                                  <th>Relation</th>
+                                  <th></th>
+                                 
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td><input type="checkbox" name="" class="checkbox" ></td>
+                                  <td><img src="img/profile.svg"></td>
+                                  <td><a href="#"><b> Madermo</b>China </a></td>
+                                  <td></td>
+                                  <td>Connection</td>
+                                  <td><a href="#" class="company-detail"> <i class="fa fa-ellipsis-h"></i></a></td>
+                                  
+                                </tr>
+                                <tr>
+                                  <td><input type="checkbox" name="" class="checkbox" ></td>
+                                  <td><img src="img/profile.svg"></td>
+                                  <td><a href="#"><b> Madermo</b>China </a></td>
+                                  <td></td>
+                                  <td>Connection</td>
+                                  <td><a href="#" class="company-detail"> <i class="fa fa-ellipsis-h"></i></a></td>
+                                  
+                                </tr>
+                            
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                   
+                 </div>
+               </div>
+              </div>
+              <div id="menu1" class="tab-pane fade">
+                <div class="table-block">
+                           <div class="table-responsive variant">
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                              <thead>
+                                <tr>
+                                  <th>Name</th>
+                                  <th>Companies in group</th>
+                                  <th>Created</th>
+                                  <th>Creator</th>
+                                </tr>
+                              </thead>
+                              <tbody style="background-color: #fff;">
+                                <tr>
+                                  <td>Computer</td>
+                                  <td>0</td>
+                                  <td>12/23/2018</td>
+                                  <td>a c</td>
+                                 </tr>
+                                  <tr>
+                                  <td>Computer</td>
+                                  <td>0</td>
+                                  <td>12/23/2018</td>
+                                  <td>a c</td>
+                                 </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+              </div>
+              <div id="menu2" class="tab-pane fade">
+                <div class="row">
+                 <div class="col-sm-12 col-md-12">
+                    <div class="search-filter">
+                      <i class="fa fa-search"></i>
+                      <input type="text" class="form-control" placeholder="Search..." name="">
+                      <div class="invite-company">
+                        <a href="#" class="btn btn-success btn-circle invite-company-btn">Invite Company</a>
+                      </div>
+                    </div>
+                   <div class="table-block">
+                           <div class="table-responsive network-table">
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                              <thead>
+                                <tr>
+                                  <th></th>
+                                  <th>Name</th>
+                                  <th>Status</th>
+                                  <th></th>
+                                 
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td><img src="img/logo-sample.png"></td>
+                                  <td><a href="#"><b> Madermo</b>China </a></td>
+                                  <td>Invitation Sent</td>
+                                  <td><a href="#" class="btn btn-xs btn-primary-border">Cancel </a></td>
+                                  
+                                </tr>
+                                <tr>
+                                  <td><img src="img/logo-sample.png"></td>
+                                  <td><a href="#"><b> Madermo</b>China </a></td>
+                                  <td>Invitation Sent</td>
+                                  <td><a href="#" class="btn btn-xs btn-primary-border">Cancel </a></td>
+                                  
+                                </tr>                         
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                   
+                 </div>
+               </div>
+              </div>
+            </div>
+         </div>
+         <!-- /.container-fluid-->
+          <div class="create-product hide">
+            <div class="title-modal">
+              <h4>Create Product</h4>
+              <button type="button" class="close close-dialog" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="content-block">
+              <div class="title-inner">
+                Details
+              </div>
+              <div class="row">
+                <div class="col-sm-8">
+                  <div class="form-group">
+                  <label>Name</label>
+                  <input type="text" class="form-control" name="">
+                  </div>
+                  <div class="form-group">
+                    <label>DESCRIPTION (OPTIONAL)</label>
+                    <textarea class="form-control" cols="8" rows="4" style="min-height: 125px;"></textarea>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="form-group">
+                    <label>UPC</label>
+                     <input type="text" class="form-control" name="">
+                  </div>
+                  <div class="form-group">
+                    <label>UNSPSC COMMODITY CODE</label>
+                     <input type="text" class="form-control" name="">
+                  </div>
+                  <div class="form-group">
+                    <label>YOUR CATEGORY NAME (OPTIONAL)</label>
+                     <input type="text" class="form-control" name="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-block">
+              <div class="title-inner">
+                Pricing
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="form-group">
+                  <label>BASE PRICE (EUR)</label>
+                  <input type="text" class="form-control" name="">
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="form-group">
+                    <label>PER BASE QUANTITY</label>
+                     <input type="text" class="form-control" name="" placeholder="1">
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="form-group">
+                    <label>UNIT OF MEASURE</label>
+                     <input type="text" class="form-control" name="" placeholder="EA-each">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <hr>
+                <div class="desc-text">
+                <div class="edit-btn right-btn-set">
+                           <a href="#">Edit</a>
+                        </div>
+                <p>Lot Size</p>        
+                <p>Users can order this product in lots of 1 <b>EA - each</b> </p>
+                </div>
+                <hr>
+                <div class="desc-text">
+                <div class="edit-btn right-btn-set">
+                           <a href="#">Edit</a>
+                        </div>
+                <p>Minimum order quantity</p>        
+                <p>Users can order this product in lots of 1 <b>EA - each</b> </p>
+                </div>
+              </div>
+            </div>
+            <div class="content-block">
+              <div class="title-inner">
+                Logistics
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="form-group">
+                  <label>LEAD TIME (IN DAYS) (OPTIONAL)</label>
+                  <input type="text" class="form-control" name="">
+                  </div>
+                </div>
+                
+              </div>
+              
+            </div>
+          </div>
+         <!-- Scroll to Top Button-->
+         <a class="scroll-to-top rounded" href="#page-top">
+         <i class="fa fa-angle-up"></i>
+         </a>
+
+
+         <!-- Logout Modal-->
+         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                     </button>
+                  </div>
+                  <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                  <div class="modal-footer">
+                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                     <a class="btn btn-primary" href="login.html">Logout</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      <div class="overlay-full hide"></div>
+        <div  id="actions-side" class=" right-bar hide">
+                 <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Actions</span>  <i class="fa fa-close"></i></a>
+          <menu>
+          <li>
+            <button data-ts="Button" class="hide" type="button" style="display: none;">
+              <span class="hide" t="" t-context="product flow button">Create product</span>
+            </button>
+          </li>
+         
+          <li>
+            <button class="download-block" type="button">
+              <span t="" t-context="product flow action">Download products</span>
+               <i class="fa fa-arrow-right"></i>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="btn disabled">Edit UNSPSC code (0)</button>
+          </li>
+          <!----><li ng-controller="SMM.DeactivateProductsController as deactivateProductsCtrl" ng-if="mainCtrl.model.isWorkingMode">
+            <button type="button" class="btn disabled">Deactivate products (0)</button>
+          </li><!---->
+          <!----><li ng-controller="SMM.DeleteProductsController as deleteProductsCtrl" ng-if="mainCtrl.model.isWorkingMode">
+            <button type="button" class="btn disabled">Delete products (0)</button>
+          </li><!---->
+          <li>
+            <button  class="currency-selector">
+              <span t="" t-context="coding panel button">Change default currency</span>
+             <i class="fa fa-arrow-right"></i>
+            </button>
+          </li>
+          
+        </menu>
+      </div>
+
+         <div  id="actions-side" class=" right-bar download-all hide">
+                 <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Download Products</span>  <i class="fa fa-close"></i></a>
+          <menu>
+          <li>
+            <button data-ts="Button" class="hide" type="button" style="display: none;">
+              <span class="hide" t="" t-context="product flow button">Create product</span>
+            </button>
+          </li>
+         
+          <li>
+            <button type="button" class="btn disabled">Download  selected products( 0)</button>
+          </li>
+          <li>
+            <button class="download-block" type="button">
+              <span t="" t-context="product flow action">Download all products (2)</span>
+               <i class="fa fa-arrow-right"></i>
+            </button>
+          </li>
+          <li>
+            <a href="#" class="btn btn-primary-border btn-block">Download</a>
+          </li>
+        </menu>
+      </div>
+      <!-- edit-variant -->
+         <div  id="invite-company" class=" right-bar download-all hide">
+                 <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Add Company</span>  <i class="fa fa-close"></i></a>
+          <menu>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="form-group">
+                <label>Company Name</label>
+                <input type="text" class="form-control" name="">
+              </div>
+               <div class="form-group">
+                <label>Country</label>
+                <input type="text" class="form-control" name="">
+              </div>
+               <div class="form-group">
+                <a href="#" class="btn btn-circle btn-success btn-block"> Add Company</a>
+              </div>
+            </div>
+          </div>
+        </menu>
+      </div>
+      <!-- edit-variant -->
+      <!-- company detail -->
+      <div  id="company-detail" class=" right-bar hide">
+        <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Company</span>  <i class="fa fa-close"></i></a>
+        <menu>
+          <div class="detail-block row">
+            <div class="col-sm-12">
+              <div class="c-name">
+                <h4>KK Test</h4>
+                <span><i class="fa fa-map-marker"></i> China</span>  
+                <span><i class="fa fa-plane"></i> Kfc@kfc.com</span>
+                <div class="foot">
+                  <span>Via Email</span>
+                  <span><i class="fa fa-pencil"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <li>
+            <button class="create-docs" type="button">
+              <span>Create Document</span>
+               <i class="fa fa-plus-circle"></i>
+            </button>
+          </li>
+          <br>
+          
+          <li>
+            <button class="edit-company" type="button">
+              <span>Edit Company</span>
+               <i class="fa fa-pencil"></i>
+            </button>
+          </li>
+          <li>
+            <button class="categorize" type="button">
+              <span>Categorize as</span>
+               <i class="fa fa-angle-right"></i>
+            </button>
+          </li>
+          <li>
+            <button class="properties" type="button">
+              <span>Properties</span>
+               <i class="fa fa-angle-right"></i>
+            </button>
+          </li>
+          <li>
+            <button class="" type="button">
+              <span>Merge Into..</span>
+            </button>
+          </li>
+          <br>
+          <div class="form-group">
+            <a href="#" class="btn btn-circle btn-danger btn-block">Remove from my network</a>
+          </div>
+        </menu>
+      </div>
+      <!-- company detail -->
+            <!-- company detail -->
+      <div  id="edit-company" class=" right-bar hide">
+        <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Edit Company Detail</span>  <i class="fa fa-close"></i></a>
+        <menu>
+          <div class="detail-block row">
+            <div class="col-sm-12">
+              <div class="form-group">
+                <label>company Name</label>
+                <input type="text" class="form-control" name="">
+              </div>
+              <div class="form-group">
+                <label>country</label>
+                <input type="text" class="form-control" name="">
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="text" class="form-control" name="">
+              </div>
+              <div class="form-group">
+                <label>Address</label>
+                <input type="text" class="form-control" name="">
+              </div>
+              <div class="form-group">
+                <label>Vat reg. no.</label>
+                <input type="text" class="form-control" name="">
+              </div>
+              <div class="form-group">
+                <label>Global Location Number</label>
+                <input type="text" class="form-control" name="">
+              </div>
+              <div class="form-group">
+                <label>Global Location Number</label>
+                <input type="text" class="form-control" name="">
+              </div>
+              <div class="form-group">
+                <a href="#"><i class="fa fa-info"></i> What is GLN</a>
+              </div>
+
+              <div class="form-group">
+                <label>Add Identifier</label>
+                <input type="text" class="form-control" name="">
+              </div>
+
+              <div class="form-group">
+                <label>Location</label>
+                <input type="text" class="form-control" name="">
+              </div>
+
+              <div class="form-group">
+                <a href="#" class="btn btn-success btn-block btn-circle">Save Company</a>
+              </div>
+            </div>
+          </div>
+         
+        </menu>
+      </div>
+      <!-- company detail -->
+         <!-- company detail -->
+      <!-- create docs -->
+      <div  id="create-docs" class=" right-bar hide">
+        <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Send Document</span>  <i class="fa fa-close"></i></a>
+        <menu>
+             <li>
+            <button data-ts="Button" class="hide" type="button" style="display: none;">
+              <span class="hide"></span>
+            </button>
+          </li>
+          <li>
+            <button class="" type="button">
+              <span t="" t-context="product flow action">Invoice</span>
+               <i class="fa fa-arrow-right"></i>
+            </button>
+          </li>  
+          <li>
+            <button class="" type="button">
+              <span t="" t-context="product flow action">Purchase Order</span>
+               <i class="fa fa-arrow-right"></i>
+            </button>
+          </li>  
+          <li>
+            <button class="" type="button">
+              <span t="" t-context="product flow action">Quote</span>
+               <i class="fa fa-arrow-right"></i>
+            </button>
+          </li>  
+          <li>
+            <button class="" type="button">
+              <span t="" t-context="product flow action">Credit Note</span>
+               <i class="fa fa-arrow-right"></i>
+            </button>
+          </li>     
+        </menu>
+      </div>
+      <!-- company detail -->
+      <!-- categorize as  -->
+      <div  id="categorize" class=" right-bar hide">
+        <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Categorize as</span>  <i class="fa fa-close"></i></a>
+        <menu>
+          <div class="detail-block row">
+            <div class="col-sm-12">
+              <div class="c-name">
+                <h4>KK Test</h4>
+                <span><i class="fa fa-map-marker"></i> China</span>  
+                <span><i class="fa fa-plane"></i> Kfc@kfc.com</span>
+                <div class="foot">
+                  <span>Via Email</span>
+                  <span><i class="fa fa-pencil"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <li>
+            <button class="create-docs" type="button">
+              <span>Customer</span>
+               <i class="fa fa-check-circle"></i>
+            </button>
+          </li>
+          <li>
+            <button class="create-docs" type="button">
+              <span>Supplier</span>
+               <i class="fa fa-check-circle"></i>
+            </button>
+          </li>
+          <br>
+          <div class="form-group">
+            <a href="#" class="btn btn-block btn-success btn-circle"> Done</a>
+          </div>   
+       
+        </menu>
+      </div>
+      <!-- categorize as ends -->      
+      <!-- properties as  -->
+      <div  id="properties" class=" right-bar hide">
+        <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Properties</span>  <i class="fa fa-close"></i></a>
+        <menu>
+          <div class="detail-block row">
+            <div class="col-sm-12">
+              <div class="c-name">
+                <h4>KK Test</h4>
+                <span><i class="fa fa-map-marker"></i> China</span>  
+                <span><i class="fa fa-plane"></i> Kfc@kfc.com</span>
+                <div class="foot">
+                  <span>Via Email</span>
+                  <span><i class="fa fa-pencil"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+          <br>
+          <div class="form-group">
+            <a href="#" class="btn btn-block btn-primary-border btn-circle"> Add key</a>
+          </div> 
+          <div class="form-group">
+            <a href="#" class="btn btn-block btn-success btn-circle"> Done</a>
+          </div> 
+          <div class="form-group">
+            <a href="#" class="btn btn-block btn-primary-border btn-circle"> Cancel</a>
+          </div>   
+       
+        </menu>
+      </div>
+      <!-- categorize as ends -->
+
+         <div  id="add-filter" class=" right-bar  hide">
+                 <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Add Filter</span>  <i class="fa fa-close"></i></a>
+          <menu>
+          <li>
+            <button data-ts="Button" class="hide" type="button" style="display: none;">
+              <span class="hide" t="" t-context="product flow button">Create product</span>
+            </button>
+          </li>
+         
+         
+          <li>
+            <button class="download-block relation-block" type="button">
+              <span t="" t-context="product flow action">Relation</span>
+               <i class="fa fa-arrow-right"></i>
+            </button>
+          </li>
+         
+        </menu>
+      </div>
+      <!-- edit-variant -->   <!-- edit-variant -->
+
+         <div  id="relation-filter" class=" right-bar  hide">
+                 <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Filter by relation</span>  <i class="fa fa-close"></i></a>
+          <menu>
+          <li>
+            <button data-ts="Button" class="hide" type="button" style="display: none;">
+              <span class="hide" t="" t-context="product flow button">Create product</span>
+            </button>
+          </li>
+         
+         
+          <li class="active">
+            <button class="download-block " type="button">
+              <span t="" t-context="product flow action">External</span>
+           
+            </button>
+          </li>
+          <li>
+            <button class="download-block " type="button">
+              <span t="" t-context="product flow action">Internal</span>
+             
+            </button>
+          </li>
+          <div class="form-group">
+            <a href="#" class="btn btn-success btn-block btn-circle apply">Apply Filter</a>
+          </div>
+        </menu>
+      </div>
+      <!-- edit-variant -->
+
+    
+         <!-- Bootstrap core JavaScript-->
+         <script src="vendor/jquery/jquery.min.js"></script>
+         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+         <!-- Core plugin JavaScript-->
+         <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+         <!-- Custom scripts for all pages-->
+    <!-- Custom scripts for this page-->
+    <script src="js/sb-admin-datatables.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+         <script src="js/sb-admin.js"></script>
+         <script type="text/javascript">
+            $(document).ready(function(){
+                $('[data-toggle="popover"]').popover({
+                    placement : 'top',
+                    trigger : 'hover'
+                });
+            });
+            </script>
+            <script type="text/javascript">
+              //select all checkboxes
+$("#select_all").change(function(){  //"select all" change 
+    $(".checkbox").prop('checked', $(this).prop("checked")); //change all ".checkbox" checked status
+});
+
+//".checkbox" change 
+$('.checkbox').change(function(){ 
+    //uncheck "select all", if one of the listed checkbox item is unchecked
+    if(false == $(this).prop("checked")){ //if this item is unchecked
+        $("#select_all").prop('checked', false); //change "select all" checked status to false
+    }
+    //check "select all" if all checkbox items are checked
+    if ($('.checkbox:checked').length == $('.checkbox').length ){
+        $("#select_all").prop('checked', true);
+    }
+});
+            </script>
+      </div>
+   </body>
+</html>
