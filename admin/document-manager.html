@@ -177,8 +177,8 @@
                 <div class="search-filter-block">
                   <input type="text" class="form-control" name="" placeholder="Search">
                   <div class="right-filter">
-                    <a href="#"><i class="fa fa-align-center"></i></a> |
-                    <a href="#"><i class="fa fa-caret-down"></i></a>
+                    <a href="#" class="add-filter"><i class="fa fa-align-center"></i></a> |
+                    <a href="#" class="sort-filter"><i class="fa fa-caret-down"></i></a>
                   </div>
                 </div>
                 </div>
@@ -360,24 +360,31 @@
          <a class="scroll-to-top rounded" href="#page-top">
          <i class="fa fa-angle-up"></i>
          </a>
-         <!-- Logout Modal-->
-         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-               <div class="modal-content">
-                  <div class="modal-header">
-                     <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                     <span aria-hidden="true">×</span>
-                     </button>
-                  </div>
-                  <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                  <div class="modal-footer">
-                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                     <a class="btn btn-primary" href="login.html">Logout</a>
-                  </div>
-               </div>
-            </div>
-         </div>
+     
+             <div class="overlay-full hide"></div>
+        <div  id="add-filter" class=" right-bar hide">
+                 <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Document Options</span>  <i class="fa fa-close"></i></a>
+          <menu data-ts="Menu" data-ts-spirit="ts.ui.MenuSpirit" class="ts-menu ts-spirit">
+             <li><button><span>Transaction type</span><i class="fa fa-caret-right"></i></button></li>
+             <li><button><span>Document type</span><i class="fa fa-caret-right"></i></button></li>
+             <li><button><span>Status</span><i class="fa fa-caret-right"></i></button></li>
+             <li><button><span>Copy indication</span><i class="fa fa-caret-right"></i></button></li>
+             <li><button><span>Date created</span><i class="fa fa-caret-right"></i></button></li>
+             <li><button><span>Date issued</span><i class="fa fa-caret-right"></i></button></li>
+             <li><button><span>Total value</span><i class="fa fa-caret-right"></i></button></li>
+             <li><button><span>Archived documents</span><i class="fa fa-caret-right"></i></button></li>
+          </menu>
+      </div>
+        <div  id="sort-filter" class=" right-bar hide">
+                 <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Actions</span>  <i class="fa fa-close"></i></a>
+          <menu data-ts="Menu" data-ts-spirit="ts.ui.MenuSpirit" class="ts-menu ts-spirit">
+           <li><button><span>Last modified</span><i class="fa fa-caret-right"></i></button></li>
+           <li class="ts-checked"><button><span>Issue date</span><i class="fa fa-caret-right"></i></button></li>
+           <li><button><span>Due date</span><i class="fa fa-caret-right"></i></button></li>
+           <li><button><span>Value</span><i class="fa fa-caret-right"></i></button></li>
+           <li><button><span>Document type</span><i class="fa fa-caret-right"></i></button></li>
+        </menu>
+      </div>
          <!-- Bootstrap core JavaScript-->
          <script src="vendor/jquery/jquery.min.js"></script>
          <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

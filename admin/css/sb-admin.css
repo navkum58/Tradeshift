@@ -18,6 +18,8 @@ body.sticky-footer .content-wrapper {
 body.fixed-nav {
   padding-top: 56px;
 }
+ul{list-style: none;}
+ul li{list-style: none;}
 .section{padding: 40px 0px;}
 .gray-bg{background-color: #f5f5f5!important;}
 .no-padding{padding: 0px!important;}
@@ -2155,7 +2157,7 @@ body .supplier-offer li a input{min-width: 320px!important;padding-left:15px!imp
 .invite-company{float: right;padding-top: 5px;}
 .documents{background-color: #00b0ff;}
 .search-filter-block {margin-bottom:30px; }
-.search-filter-block input{border-radius: 35px;position: relative;}
+.search-filter-block input{position: relative;}
 .search-filter-block .right-filter{position: absolute;right: 30px;top:6px;}
 .search-filter-block .right-filter a{display:inline-block;margin: 0px 5px;}
 .c-block{background-color: #fff;border: 1px solid #eee; border-radius: 2px;margin-bottom: 20px;}
@@ -2170,3 +2172,65 @@ body .supplier-offer li a input{min-width: 320px!important;padding-left:15px!imp
 .content-c ul li .label-default{background-color: #ccc;padding:2px 10px;font-size: 14px;border-radius: 3px;}
 .content-c ul li span{float: right;font-weight: 700;}
 .content-c ul li:last-child{margin: 0px;border: none;}
+#add-filter.right-bar menu li:first-child span, #sort-filter.right-bar menu li:first-child span,  #document-option.right-bar menu li:first-child span{font-weight: 400; padding: 10px!important;background-color: initial!important;color: #007bff;} 
+#add-filter.right-bar menu li i, #sort-filter.right-bar menu li i, #document-option.right-bar menu li i{left: initial;right: 15px;}
+#add-filter.right-bar menu li span, #sort-filter.right-bar menu li span,  #document-option.right-bar menu li span{padding-left: 10px;}
+#add-filter.right-bar menu li:first-child button, #sort-filter.right-bar menu li:first-child button,  #document-option.right-bar menu li:first-child button{padding-left: 10px;}
+ul.navbar-nav.search-block.supplier-offer.document-list {
+    background: #f5f5f5;
+}
+.document-list ul{padding: 0px;display: block;}
+.document-list ul li {display: block;border-bottom: 1px solid #eee;margin-bottom: 10px;padding-bottom: 10px; }
+.document-list ul li span{display: inline-block;}
+.document-list ul li span.icon{background-color: #f5f5f5;padding: 5px;height:60px;border: 1px solid #eee;width:45px;text-align: center;font-weight: 600;padding-right: 5px;}
+.document-list ul li span.icon i{display: block;}
+.document-list ul li .details {padding-left: 10px;}
+.document-list ul li .details span{display: block;font-size: 12px;}
+.document-list ul li .money{float: right;padding-top: 8px;}
+.document-list ul li .money span{display: block;font-size: 14px;font-weight: 600;}
+.document-list ul li .v-filter{float: right;padding-top: 15px;padding-left: 15px;font-size:22px;}
+.document-option:hover{cursor: pointer;}
+.document-list ul li span.icon.bg-success,.document-list ul li span.icon.bg-primary,.document-list ul li span.icon.bg-warning{color: #fff;}
+.detail-block-doc{background-color: #fff;border: 1px solid #eee; padding: 5px; border-radius: 3px;margin-top: 20px;}
+.detail-block-doc span.icon{display: inline-block;color: #fff; background-color: #f5f5f5;padding: 5px;height:60px;border: 1px solid #eee;width:45px;text-align: center;font-weight: 600;padding-right: 5px;}
+.inner-block span{display: block;}
+span.inner-block {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    padding-left: 10px;
+}
+.detail-block-doc .form-group{position: relative;}
+.detail-block-doc label{text-transform: uppercase;}
+.detail-block-doc .form-group i{position: absolute;top:42px; right: 10px;}
+.form-group.total {
+    margin: 0px;
+}
+.form-group.total span{float: right;font-weight: 600;}
+.preset-filter {
+    background: #20a0e9;
+    position: fixed;
+    top: 0;
+    color: #fff;
+    z-index: 9999;
+    bottom: 0;
+}
+.preset-filter header{border-bottom: 1px solid #eee;padding:15px 10px;font-size: 22px;}
+.preset-filter header i {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    background: #007bff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    float: right;
+}
+.body-filter{padding: 15px 10px;text-align: center;font-size: 18px;border-bottom: 1px solid #eee;margin-bottom: 10px;}
+.body-filter a{color: #fff; text-decoration: underline;}
+.preset-filter .footer{padding: 15px 10px;}
+.icon-right.right-bar menu li:first-child span{font-weight: 400; padding: 10px!important;background-color: initial!important;color: #007bff;} 
+.icon-right.right-bar menu li i{left: initial;right: 15px;}
+.icon-right.right-bar menu li span{padding-left: 10px;}
+.icon-right.right-bar menu li:first-child button{padding-left: 10px;}
