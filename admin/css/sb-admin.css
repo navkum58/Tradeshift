@@ -26,7 +26,7 @@ ul li{list-style: none;}
 .hide{display: none;}
 .show{display: block;}
 a{    color: #00b0ff;}
-.btn-circle{border-radius: 30px;text-transform: uppercase;font-weight: 600;}
+.btn-circle{border-radius: 30px;text-transform: uppercase;font-weight: 600;padding: .5rem 2rem;}
 .btn-white-border{border-radius: 30px;text-transform: uppercase;font-weight: 600;background-color: none;color: #fff; border:1.5px solid #fff;}
 .btn-white-border:hover{background-color: #fff;color: #878787;}
 .btn-primary-border, .btn-primary-border:hover{padding: .5rem 2rem; border-radius: 30px;text-transform: uppercase;font-weight: 600;background-color: none;color: #00b0ff; border:1px solid #00b0ff;}
@@ -1551,19 +1551,23 @@ span.name{font-size: 20px;padding-left: 20px;font-weight: 600;color:#2ec3ff;padd
 .profile-progress {position: absolute; right: 10px; width: 255px; top: 25px; } 
 .profile-progress .progress-bar{background-color: #40a15a; }
 .profile-progress .progress{height: 1.5rem;border-radius: 25px;}
-.profile-detail{padding-top: 20px;}
+.profile-detail{padding-top: 20px;position: relative;}
+.profile-detail .product-list{max-width: 100%!important;border:none!important;}
+.padded-container {position: relative;}
+.padded-container .badge{position: absolute;right: 0; top: -30px;}
+.padded-container .badge img{height: 50px;}
 .profile-detail label{text-transform: uppercase;font-weight: 600;color: #888;font-size: 12px;}
 .right-btn-set{top:8%;}
 .product-service{display: block;text-align: center;}
 .product-service a{display: inline-block;margin: 0px 20px;}
 .product-service a img{max-height: 150px;}
-.product-list{text-align: center;}
-.product-list ul{display: block;list-style: none;padding: 0px;margin-bottom: 30px;}
-.product-list ul li a:hover{text-decoration: none;}
-.product-list ul li{display: inline-block;border: 1px solid #eee;padding: 15px;text-align: center;height: 160px;margin-right: 10px;width: 160px;}
-.product-list ul li .detail img{display: block;max-height:50px;margin-bottom: 20px;max-width: 100%;}
-.product-list ul li .detail span, .product-list ul li .detail span:hover{text-decoration: none; display: block;color: #888;margin-bottom: 5px;}
-.product-list ul li a,.product-list ul li a:hover{text-transform: none;color: #888;}
+.profile-detail .product-list{text-align: center;}
+.profile-detail .product-list ul{display: block;list-style: none;padding: 0px;margin-bottom: 30px;}
+.profile-detail .product-list ul li a:hover{text-decoration: none;}
+.profile-detail .product-list ul li{display: inline-block;border: 1px solid #eee;padding: 15px;text-align: center;height: 160px;margin-right: 10px;width: 160px;}
+.profile-detail .product-list ul li .detail img{display: block;max-height:50px;margin-bottom: 20px;max-width: 100%;}
+.profile-detail .product-list ul li .detail span, .profile-detail .product-list ul li .detail span:hover{text-decoration: none; display: block;color: #888;margin-bottom: 5px;}
+.profile-detail .product-list ul li a,.profile-detail .product-list ul li a:hover{text-transform: none;color: #888;}
 /*profile page ends here*/
 .title-dash{    background-color: rgb(32, 160, 233);color: #fff; padding: 15px;font-size: 20px;}
 .top-tabs ul li {margin:10px 15px ;}
@@ -2234,3 +2238,102 @@ span.inner-block {
 .icon-right.right-bar menu li i{left: initial;right: 15px;}
 .icon-right.right-bar menu li span{padding-left: 10px;}
 .icon-right.right-bar menu li:first-child button{padding-left: 10px;}
+.company-profile li{font-size: 20px; color: #fff;}
+a.sort-list {
+    background: none!important;
+    border: 1px solid;
+    width: initial!important;
+    border-radius: 35px!important;
+    padding: 0px 25px!important;
+    text-transform: uppercase;
+    min-width: 250px;
+}
+.document-list .ml-auto{width: 60%!important;float: right;}
+.document-list .ml-auto a{position: relative;}
+.document-list .ml-auto a span.arrow, .document-list .ml-auto a span.arrow:hover {
+    position: absolute;
+    text-decoration: none;
+    border-left: 1px solid #20a0e9;
+    right: 0;
+    padding: 0px 15px;
+    height: 44px;
+}
+.document-list .ml-auto a,.document-list .ml-auto a:hover {text-decoration: none; text-align: left!important;}
+.teams li{color: #fff; font-size: 22px;}
+.teams li.ml-auto{padding-left:50%;}
+
+.right-bar-user {
+    background-color: #f5f5f5;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    min-height: 679px;
+    top: 0;
+}
+.message-container{    max-width: 440px;
+    margin: 0px auto;
+    padding: 44px 22px 0px;
+}
+.message-icon {
+    background: #ccc;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    color: #f5f5f5;
+    font-size: 54px;
+}
+.edit-member li{margin: 0px!important;padding: 5px!important;}
+.edit-member li:hover{cursor: pointer;}
+.edit-member li.active{background-color: #dcf1fd;}
+ul.edit-member {
+    max-height: 640px;
+    overflow-y: scroll;
+    margin: 0px;
+    padding: 0px;
+}
+.ui-item{
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    height: 100%;
+    min-height: 679px;
+    border-left: 1px solid #eee;
+}
+.ui-item header{
+    background: #00b0ff;
+    padding: 10px;
+}
+.ui-item header span.name{
+color: #fff!important;
+}
+.ui-item header span.btn-set{float: right;}
+.details-block-ui{padding: 15px;max-width: 60%;}
+.details-block-ui .form-group{position: relative;}
+.details-block-ui .form-group label{text-transform:uppercase;color: #00b0ff;font-size: 14px;font-weight: 600;}
+.details-block-ui .form-group i{position: absolute;top:42px;right: 10px;}
+.member-block {
+    padding: 10%;
+    text-align: center;
+}
+.member-block .icon{background-color: #eee; width: 100px; height: 100px;line-height: 100px; text-align: center;border-radius: 50%;margin: 20px auto;font-size: 62px;}
+.task-list{background-color: #72b148;}
+.task-list li{font-size: 20px;padding-top: 5px;}
+.task-list-accordian .card-header{background-color: #f5f5f5;}
+.task-list-accordian .card-header button{display: block;width: 100%;margin-bottom: 15px;text-align: left;color: #888;margin-bottom: 0px;font-weight: 600;}
+.task-list-accordian .document-list ul li .v-filter{padding-top: 0px;}
+.task-list-accordian ul li .v-filter a:last-child {
+    border: 1px solid #00b0ff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0px 10px;
+    float: right;
+    text-align: center;
+    line-height: 36px;
+}
+.task-list-accordian ul li{padding: 15px;margin: 0px;}
+.task-list-accordian .card-body{padding-top: 15px;}
+.task-list-accordian .card{margin-bottom: 20px;}

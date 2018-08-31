@@ -400,6 +400,26 @@ $(document).ready(function() {
         $('.overlay-full').show();
         $('#pre-filter').show();
     });
-
+    $('.create-team').click(function(){
+        $('.overlay-full').show();
+        $('#create-team').show();
+    });
+    $('.edit-member li').click(function(){
+        $('.edit-member li').removeClass('active')
+        $(this).addClass('active');
+        $('.ui-item ').toggleClass('hide');
+        /*
+        $('.overlay-full').show();
+        $('#create-team').show();*/
+    });
+     $('.add-member').click(function(){
+        $('.overlay-full').show();
+        $('#add-member').show();
+    });
+      $('.edit-item').click(function(){
+        $('.overlay-full').show();
+        $('#edit-item').show();
+    });
+  
 
 })(jQuery); // End of use strict

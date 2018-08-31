@@ -161,102 +161,133 @@
                   </a>
                </li>
             </ul>
-            <ul class="navbar-nav search-block supplier-offer document-list">
-              <li><a href="#" class="search"><i class="fa fa-search"></i> <input type="text" placeholder="Search documents " name=""></a></li>
-              <li class="ml-auto"> <a href="#" class="sort-list">Sort :<span> Issue Date</span> <span class="arrow"><i class="fa fa-long-arrow-down"></i></span> </a> </li>
+            <ul class="navbar-nav teams">
+              <li>Teams</li>
+              <li class="ml-auto"> <a href="#" class="btn btn-circle btn-success create-team"> Create Team</a> </li>
              </ul>
          </div>
       </nav>
-      <div class="content-wrapper">
+      <div class="content-wrapper no-padding ">
          <div class="container-fluid">
             <div class="row">
-               <div class="col-sm-9">
-                <div class="document-list">
-                  <ul>
-                    <li class="document-option">
-                      <span class="icon">
-                        <i class="fa fa-check"></i>
-                        PR
-                      </span>
-                      <span class="details">
-                        <span>madermo</span>
-                        <span><b> DRAFT</b> PURCHASE PURCHASE REQUEST #2 ISSUE DATE: 8/20/18</span>
-                      </span>
-                      <span class="v-filter">
-                       <a href="#"> <i class="fa fa-ellipsis-h"></i></a>
-                      </span>
-                      <span class="money">
-                        <span>0.00</span>
-                        <span>CNY</span>
-                      </span>
-                    </li>
-
-                    <li class="document-option">
-                      <span class="icon">
-                        <i class="fa fa-check"></i>
-                        PR
-                      </span>
-                      <span class="details">
-                        <span>madermo</span>
-                        <span><b class="text-success"> PAYMENT RECEIVED</b> PURCHASE PURCHASE REQUEST #2 ISSUE DATE: 8/20/18</span>
-                      </span>
-                      <span class="v-filter">
-                       <a href="#"> <i class="fa fa-ellipsis-h"></i></a>
-                      </span>
-                      <span class="money">
-                        <span>0.00</span>
-                        <span>CNY</span>
-                      </span>
-                    </li>
-                    <li class="document-option">
-                      <span class="icon bg-primary">
-                        <i class="fa fa-check"></i>
-                        PR
-                      </span>
-                      <span class="details">
-                        <span>madermo</span>
-                        <span><b class="text-warning"> PAYMENT RECEIVED</b> PURCHASE PURCHASE REQUEST #2 ISSUE DATE: 8/20/18</span>
-                      </span>
-                      <span class="v-filter">
-                       <a href="#"> <i class="fa fa-ellipsis-h"></i></a>
-                      </span>
-                      <span class="money">
-                        <span>0.00</span>
-                        <span>CNY</span>
-                      </span>
-                    </li>
-                    <li class="document-option">
-                      <span class="icon bg-success">
-                        <i class="fa fa-check"></i>
-                        PR
-                      </span>
-                      <span class="details">
-                        <span>madermo</span>
-                        <span><b class="text-success"> PAYMENT RECEIVED</b> PURCHASE PURCHASE REQUEST #2 ISSUE DATE: 8/20/18</span>
-                      </span>
-                      <span class="v-filter">
-                       <a href="#"> <i class="fa fa-ellipsis-h"></i></a>
-                      </span>
-                      <span class="money">
-                        <span>0.00</span>
-                        <span>CNY</span>
-                      </span>
-                    </li>
+               <div class="col-sm-5 network-content no-padding">
+                <div class="top-tabs ">
+                 <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#home" class="active show">Active Teams (2)</a></li>
+                    <li><a data-toggle="tab" href="#menu1">My teams (0)</a></li>
+                    <li><a data-toggle="tab" href="#menu2">disabled (0)</a></li>
                   </ul>
-                </div>
+
+                  <div class="tab-content no-padding">
+                    <div id="home" class="tab-pane fade in active show no-padding">
+                     <div class="row">
+                       <div class="col-sm-12 col-md-12">
+                          <div class="document-list">
+                            <ul class="edit-member">
+                              <li class="">
+                                 <span class="details">
+                                  <span><b> UI GROUP </b></span>
+                                  <span>FOR UI</span>
+                                </span>
+                                <span class="money">
+                                  <span>0 <i class="fa fa-caret-right"></i></span>
+                                </span>
+                              </li>
+                              <li class="">
+                                 <span class="details">
+                                  <span><b> UI GROUP </b></span>
+                                  <span>FOR UI</span>
+                                </span>
+                                <span class="money">
+                                  <span>0 <i class="fa fa-caret-right"></i></span>
+                                </span>
+                              </li>
+                            </ul>
+                          </div>
+                       </div>
+                     </div>
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
+                    </div>
+                    <div id="menu2" class="tab-pane fade">
+                      <div class="row">
+                       <div class="col-sm-12 col-md-12">
+                       </div>
+                     </div>
+                    </div>
+                  </div>
                </div>
-               <div class="col-sm-3">
-                 <div class="preset-filter">
+               </div>
+               <div class="col-sm-7 no-padding">
+                 <div class="right-bar-user">
+                   <div class="content">
+                     <div class="message-container">
+                      <!----><div ng-include="'messages/aboutTeams'"><div class="message-icon">
+                      <i class="fa fa-users"></i>
+                    </div>
+                    <p t="" t-context="Info message">Create <strong>Teams</strong> to organize people within your company. With <strong>Teams</strong>, you can:</p>
+                    <ul class="message-list">
+                      <li t="" t-context="Info message">Assign a task to a <strong>Team</strong> so it can be worked on by any member</li>
+                      <li t="" t-context="Info message">Share a document with a <strong>Team</strong> so all members get access</li>
+                      <li t="" t-context="Info message">Mention a <strong>Team</strong> in a conversation to easily notify all members</li>
+                    </ul>
+                    </div>
+                      <p t="" t-context="Info message">Select a <strong>Team</strong> on the left to view members and details.</p>
+                    </div>
+                   </div>
+                 </div>
+                 <div class="ui-item network-content hide">
                    <header>
-                      <span> Filters</span>
-                      <a href="#" class="add-filter"><i class="fa fa-plus"></i></a>
+                     <span class="name">UI Group</span>
+                     <span class="btn-set"><a href="#" class="btn btn-white-border btn-circle edit-item">Edit Item</a></span>
+                   <div class="clearfix"></div>
                    </header>
-                   <div class="body-filter">
-                     Currently showing all documents. Select a <a href="#" class="pre-filter"> preset filter</a> or <a href="#" class="add-filter"> add your own.</a>
-                   </div>
-                   <div class="footer">
-                     <a href="#" class="btn btn-primary btn-circle btn-block pre-filter"> Select a Preset filter</a>
-                   </div>
+                    <div class="top-tabs ">
+                 <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#details" class="active show">Details</a></li>
+                    <li><a data-toggle="tab" href="#member">Members</a></li>
+                  </ul>
+
+                  <div class="tab-content no-padding">
+                    <div id="details" class="tab-pane fade in active show no-padding">
+                     <div class="row">
+                       <div class="col-sm-12 col-md-12">
+                         <div class="details-block-ui">
+                           <div class="form-group">
+                             <label>Name</label>
+                             <input type="text" class="form-control" name="">
+                             <span><i class="fa fa-lock"></i></span>
+                           </div>
+                           <div class="form-group">
+                             <label>Description</label>
+                             <textarea class="form-control" rows="4"></textarea>
+                             <span><i class="fa fa-lock"></i></span>
+                           </div>
+                           <div class="form-group">
+                             <label>Numbers of member</label>
+                             <input type="text" class="form-control" name="">
+                             <span><i class="fa fa-lock"></i></span>
+                           </div>
+                           <div class="form-group">
+                             <label>Status</label>
+                             <input type="text" class="form-control" name="">
+                             <span><i class="fa fa-lock"></i></span>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                    </div>
+                    <div id="member" class="tab-pane fade">
+                      <div class="col-sm-12">
+                        <div class="member-block">
+                          <div class="icon"><i class="fa fa-spinner"></i></div>
+                         <p>This <b>Team</b> has no members. Start by adding someone to this<b> Team.</b></p> 
+                         <a href="#" class="btn btn-success btn-circle add-member"> add member</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+               </div>
                  </div>
                </div>
             </div>
@@ -321,20 +352,71 @@
             </div>
           </div>
       </div>
-      <div  id="add-filter" class=" right-bar hide icon-right">
-          <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Add Filter</span>  <i class="fa fa-close"></i></a>
-          <menu data-ts="Menu" data-ts-spirit="ts.ui.MenuSpirit" class="ts-menu ts-spirit">
-             <li><button><span>Transation type</span><i class="fa fa-caret-right"></i></button></li>
-             <li><button><span>Document type</span><i class="fa fa-caret-right"></i></button></li>
-             <li><button><span>Status</span><i class="fa fa-caret-right"></i></button></li>
-             <li><button><span>Issue date</span><i class="fa fa-caret-right"></i></button></li>
-          </menu>
+      <div  id="create-team" class=" right-bar hide icon-right">
+          <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Create Team</span>  <i class="fa fa-close"></i></a>
+         
           <div class="col-sm-12">
             <div class="form-group">
-              <a href="#" class="btn btn-circle btn-primary btn-block">View document</a>
+              <label>Name</label>
+              <input type="text" class="form-control"  name="">
+            </div>
+            <div class="form-group">
+              <label>Description</label>
+              <textarea class="form-control" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+              <a href="#" class="btn btn-circle btn-success btn-block">Create</a>
+            </div>
+            <div class="form-group">
+              <a href="#" class="btn btn-circle btn-primary-border btn-block apply">Cancel</a>
             </div>
           </div>
       </div>
+
+      <div  id="edit-item" class=" right-bar hide icon-right">
+          <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Edit Item</span>  <i class="fa fa-close"></i></a>
+         
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" class="form-control"  name="">
+            </div>
+            <div class="form-group">
+              <label>Description</label>
+              <textarea class="form-control" rows="5"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>Number of members</label>
+              <input type="text" class="form-control" name="">
+            </div>
+            <div class="form-group">
+              <a href="#" class="btn btn-circle btn-success btn-block">Save</a>
+            </div>
+
+            <div class="form-group">
+              <a href="#" class="btn btn-circle btn-danger btn-block">Disabled</a>
+            </div>
+            <div class="form-group">
+              <a href="#" class="btn btn-circle btn-primary-border btn-block apply">Cancel</a>
+            </div>
+          </div>
+      </div>
+         <div  id="add-member" class=" right-bar hide icon-right">
+          <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Create Team</span>  <i class="fa fa-close"></i></a>
+         
+          <div class="col-sm-12">
+            <br>
+            <div class="form-group">
+              <label>Search</label>
+              <input type="text" class="form-control"  name="">
+            </div>
+            <div class="form-group">
+              <a href="#" class="btn btn-circle btn-success btn-block">DONE</a>
+            </div>
+          </div>
+      </div>
+
       <div  id="pre-filter" class=" right-bar hide icon-right">
           <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Select Filter</span>  <i class="fa fa-close"></i></a>
           <menu data-ts="Menu" data-ts-spirit="ts.ui.MenuSpirit" class="ts-menu ts-spirit">
