@@ -420,6 +420,37 @@ $(document).ready(function() {
         $('.overlay-full').show();
         $('#edit-item').show();
     });
-  
+    
+    $('.app-store-mode li a').click(function(){
+        $('.app-store-mode li').removeClass('active');
+        $(this).parents('li').addClass('active');
 
+    });
+
+   $('.categories-button').focus(function() {
+        $('.overlay-full').show();
+        $('#categories-button').show();
+    });
+   
+
+    $('#categories-button menu li button').click(function(e) {
+        var size = $(e.target).text();
+        console.log(size);
+        $('.categories-button span').html(size);
+        $('#categories-button menu li button').removeClass('active');
+        $(this).addClass('active');
+        $('.overlay-full').hide();
+        $('#categories-button').hide(500);
+    });
+    $('.app-list a').click(function(){
+        $('.app-detail-popup').removeClass('hide');
+    });
+    $('.app-list-block li  a').click(function(){
+        $('.app-detail-popup').removeClass('hide');
+    });
+
+    
+    $('.close-popup').click(function(){
+        $('.app-detail-popup').addClass('hide');
+    });
 })(jQuery); // End of use strict
