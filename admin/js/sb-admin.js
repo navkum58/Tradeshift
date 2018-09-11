@@ -448,9 +448,19 @@ $(document).ready(function() {
     $('.app-list-block li  a').click(function(){
         $('.app-detail-popup').removeClass('hide');
     });
-
-    
     $('.close-popup').click(function(){
         $('.app-detail-popup').addClass('hide');
     });
+    $('.item-block').click(function(){
+        $('.popup-detail-item ').removeClass('hide');
+    });
+
+    $('.close-box').click(function(){
+        $('.popup-detail-item ').addClass('hide');
+    });
+
+    $('.add-cart').click(function(){
+        $('#cart-block').removeClass('hide');
+    });
+
 })(jQuery); // End of use strict
