@@ -170,6 +170,11 @@
          <div class="container-fluid">
             <div class="row">
                <div class="col-sm-9">
+                  <div class="no-item-found">
+                    <div class="alert alert-info">
+                      <a href="#" class="write-request-btn"><b> No Match Found</b> You may add a written request instead </a>
+                    </div>
+                  </div>
                   <div class="item-list">
                      <label class="top-label">Recent ordered <a href="#">List</a></label>
                      <div class="item-block">
@@ -271,6 +276,84 @@
                         </div>
                       </div>
                   </div>
+
+                  <div class="write-request hide">
+                     <header>
+                          Wittten Request
+
+                      <a href="#" class="close-box"><i class="fa fa-close"></i></a>
+                        </header>
+                      <div class="conntent-block-popup">
+                        <div class="row">
+                          <div class="col-sm-9">
+                            <div class="details">
+                              <label>Request Type</label>
+                              <div class="form-group">
+                                <input type="radio" class="" name="optradio" checked=""> Goods
+                              </div>
+                              <div class="form-group">
+                                <input type="radio" class="" name="optradio"> Service
+                              </div>
+                              <div class="form-group">
+                                <input type="radio" class="" name="optradio"> Travel
+                              </div>
+                              <label>Description</label>
+                              <div class="form-group">
+                              <textarea class="form-control" placeholder="Beanbags"></textarea>
+                              </div>
+                              <label>Item Code</label> 
+                              <div class="form-group">
+                                <input type="text" class="form-control" name="">
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-4">
+                                  <div class="form-group">
+                                    <label>Quanity</label>
+                                    <input type="text" class="form-control" placeholder="1" name="">
+                                  </div>
+                                </div>
+                                <div class="col-sm-4">
+                                  <div class="form-group">
+                                    <label>Unit Price</label>
+                                    <input type="text" class="form-control" placeholder="PCS" name="">
+                                  </div>
+                                </div>
+                                <div class="col-sm-4">
+                                  <div class="form-group">
+                                    <label>EST Unit Price (USD)</label>
+                                    <input type="text" class="form-control" placeholder="0" name="">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-9">
+                                  <div class="form-group">
+                                    <label>Url</label>
+                                    <input type="text" class="form-control" name="">
+                                  </div>
+                                </div>
+                                <div class="col-sm-3">
+                                  <div class="form-group">
+                                    <label>&nbsp;</label>
+                                    <a href="#" class="btn btn-primary-border btn-circle">Open Url</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label>Additional comment</label>
+                                <textarea class="form-control"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-3">
+                            <div class="details">
+                              <p><a href="#" class="btn btn-circle btn-success btn-block ">Update</a></p>
+                            <p><a href="#" class="btn btn-circle btn-danger btn-block ">Remove</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
                </div>
                <div class="col-sm-3">
                   <div class="preset-filter cart-block">
@@ -278,6 +361,18 @@
                         <span> Cart: Recreation room <i class="fa fa-pencil"></i></span>
                         <div class="alert alert-warning">
                            This cart is currently empty
+                        </div>
+                        <div class="cart-items">
+                          <div class="des-block">
+                            <p>Cannon printer No 92876BB is with Laser Jet</p>
+                            <h5 class="text-warning">$5,554.00 PCS</h5>
+                            <small><i class="fa fa-truck"></i> Ehther (United State)</small>
+                          </div>
+                          <div class="units">
+                            <span class="unit">1</span>
+                            <a href="#">Remove</a>
+                          </div>
+                          <div class="clearfix"></div>
                         </div>
                      </header>
                      <!--  <div class="body-filter">

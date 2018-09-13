@@ -463,4 +463,12 @@ $(document).ready(function() {
         $('#cart-block').removeClass('hide');
     });
 
+     $('.write-request-btn').click(function(){
+        $('.write-request').removeClass('hide');
+    });
+
+    $('.close-box').click(function(){
+        $('.write-request').addClass('hide');
+    });
+
 })(jQuery); // End of use strict
