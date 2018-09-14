@@ -471,4 +471,17 @@ $(document).ready(function() {
         $('.write-request').addClass('hide');
     });
 
+    $('.purchase-request').click(function(){
+        $('.item-list').addClass('hide');
+        $('.popup-detail-item').addClass('hide');
+        $('.write-request').addClass('hide');
+        $('.p-request').removeClass('hide');
+        $('.chat-block').removeClass('hide');
+    });
+    $('.go-store').click(function(){
+        $('.item-list').removeClass('hide');
+        $('.p-request').addClass('hide');
+        $('.chat-block').addClass('hide');
+    });
+
 })(jQuery); // End of use strict
