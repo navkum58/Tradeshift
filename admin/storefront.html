@@ -155,10 +155,19 @@
                </li>
             </ul>
             <ul class="navbar-nav sidenav-toggler">
-               <li class="nav-item">
-                  <a class="nav-link text-center" id="sidenavToggler">
-                  <i class="fa fa-fw fa-angle-left"></i>
+               <li class="nav-item footer-user">
+                <div class="user">
+                  <span class="user-n">
+                    AC
+                  </span>
+                  <span class="name-l">a c</span>
+                  <span>medmro</span>
+                </div>
+                <div class="user-action">
+                  <a href="../settings.html" class=""><i class="fa fa-cog"></i></a>
+                  <a class="" href="#"><i class="fa fa-power-off"></i>
                   </a>
+                  </div>
                </li>
             </ul>
             <ul class="navbar-nav search-block supplier-offer store-front-nav">
@@ -303,7 +312,7 @@
                               </div>
                               <label>Item Code</label> 
                               <div class="form-group">
-                                <input type="text" class="form-control" name="">
+                                <input type="text" class="form-control item-code-block" name="" >
                               </div>
                               <div class="row">
                                 <div class="col-sm-4">
@@ -536,7 +545,7 @@
                         <div class="alert alert-warning">
                            This cart is currently empty
                         </div>
-                        <div class="cart-items">
+                        <div class="cart-items write-request-btn">
                           <div class="des-block">
                             <p>Cannon printer No 92876BB is with Laser Jet</p>
                             <h5 class="text-warning">$5,554.00 PCS</h5>
@@ -553,7 +562,7 @@
                         Currently showing all documents. Select a <a href="#" class="pre-filter"> preset filter</a> or <a href="#" class="add-filter"> add your own.</a>
                         </div> -->
                      <div class="footer">
-                        <a href="#" class="btn btn-primary btn-circle btn-block pre-filter"> Add written request</a>
+                        <a href="#" class="btn btn-primary btn-circle btn-block write-request-btn"> Add written request</a>
                         <a href="#" class="btn btn-success btn-circle btn-block purchase-request"> View Purchase request</a>
                      </div>
                   </div>
@@ -627,6 +636,16 @@
             <div class="form-group">
               <a href="#" class="btn btn-circle btn-success btn-block">Add to cart</a>
               <a href="#" class="btn btn-circle btn-primary-border btn-block">Replace Cart item</a>
+            </div>
+          </div>
+      </div>
+      <!-- view item code -->
+           <div  id="item-code-block" class=" right-bar hide">
+          <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Apply Item Code</span>  <i class="fa fa-close"></i></a>
+          <div class="search-right">
+            <div class="form-group">
+              <input type="text" class="form-control" name="">
+              <i class="fa fa-search"></i>
             </div>
           </div>
       </div>

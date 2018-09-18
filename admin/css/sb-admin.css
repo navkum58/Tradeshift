@@ -346,7 +346,7 @@ body.sidenav-toggled .navbar-sidenav .nav-link-text {
 
 body.sidenav-toggled .navbar-sidenav .nav-item,
 body.sidenav-toggled .navbar-sidenav .nav-link {
-  width: 55px !important;
+  width:65px !important;
 }
 
 body.sidenav-toggled .navbar-sidenav .nav-item:after,
@@ -617,7 +617,7 @@ div#myWizard a.btn-primary{background-color: #fdfed5;}
     border: none;
 }
 /*wizard css*/
-.right-bar {position: fixed;z-index: 9999; right: 0;top: 0;width: 300px;overflow-y: scroll;height: 100%;background-color: #fff;}
+.right-bar {position: fixed;z-index: 9999; right: 0;top: 0;width: 320px;overflow-y: scroll;height: 100%;background-color: #fff;}
 .right-bar menu {
     padding: 10px;
     margin: 0px;
@@ -2628,3 +2628,24 @@ a.close-box {background: #ccc; width: 45px; height: 45px; position: absolute; te
 .body-message textarea{overflow-x: hidden;}
 .body-message small{color:#00b0ff;display: block;padding: 10px 0px;}
 .body-message a{font-size: 42px;position: relative;top: -15px;}
+.search-right{position: relative;}
+.search-right i{position: absolute;top: 8px;left: 8px;}
+.search-right input{border-radius: 0px;}
+.search-right input:focus{outline: none;}
+.nav-item.footer-user{height: 55px;line-height: 55px;}
+.user{float: left;}
+.user-n{    margin: 5px; width: 44px; height: 44px; border-radius: 50% 50%; color: #073f00!important; background: #edffc0; float: left; line-height: 44px; text-align: center; } 
+.user span{color: #fff;}
+.user-action{float: right;}
+.user-action a{padding-right:5px;margin-right: 5px;font-size: 22px;}
+.task-list-setting{padding: 20px;}
+.task-list-block{padding-top:55px!important;}
+.task-list-setting .no {background: #ccc; position: absolute; left: -1px; top: 0; bottom: 0; height: 62px; width: 62px; line-height: 60px; text-align: center; font-size: 28px; border-radius: 3px 0px 0px 3px; } .task-list-setting .icon-set{float: right;}
+.task-list-setting .card-header button{padding-left: 55px;}
+.supplier-form .card-header h2{font-size: 42px;font-weight: 100;text-transform: uppercase;}
+.supplier-form .card-header p{font-size: 18px;font-weight: 600;}
+.supplier-bg div#myWizard{top: 0;background: #04277f;color: #fff;}
+.supplier-bg div#myWizard a.btn-circle{background: none;color: #fff;}
+.supplier-bg div#myWizard a.btn-circle.btn-primary{background:#fff; color: #252f59; }
+.supplier-regi-nav {background: #fff; color: #252f59; font-size: 20px; padding-top: 10px; }
+div#myWizard a.btn-circle:first-child{border-left: none;}

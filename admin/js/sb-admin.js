@@ -484,4 +484,8 @@ $(document).ready(function() {
         $('.chat-block').addClass('hide');
     });
 
+     $('.item-code-block').click(function(){
+        $('#item-code-block').removeClass('hide');
+        $('.overlay-full').removeClass('hide');
+    });
 })(jQuery); // End of use strict
