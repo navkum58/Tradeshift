@@ -488,4 +488,9 @@ $(document).ready(function() {
         $('#item-code-block').removeClass('hide');
         $('.overlay-full').removeClass('hide');
     });
+     $('.product-list-table tr td').click(function(){
+        $('#product-detail').removeClass('hide');
+        $('.overlay-full').removeClass('hide');
+     });
+
 })(jQuery); // End of use strict

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Product List</title>
+      <!-- Bootstrap core CSS-->
+      <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom fonts for this template-->
+      <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <!-- Custom styles for this template-->
+        <!-- Page level plugin CSS-->
+        <link href="../vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+      <link href="../css/sb-admin.css" rel="stylesheet">
+   </head>
+   <body class="fixed-nav sticky-footer bg-dark" id="page-top">
+      <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+         <a class="navbar-brand" href="index.html">Medmro</a>
+         <a class="nav-link text-center" id="sidenavToggler">
+         <i class="fa fa-fw fa-bars"></i>
+         </a>
+         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarResponsive">
+             <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+               <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="" data-original-title="Components">
+                  <a class="nav-link " >
+                  <i class="fa fa-flag"></i>
+                  <span class="nav-link-text"> </span>
+                  </a>
+               </li>
+               <li class="nav-item " data-toggle="tooltip" data-placement="right" title="" data-original-title="Components">
+                  <a class="nav-link " >
+                  <i class="fa fa-link"></i>
+                  <span class="nav-link-text"> </span>
+                  </a>
+               </li>
+               <li class="nav-item " data-toggle="tooltip" data-placement="right" title="" data-original-title="Components">
+                  <a class="nav-link " >
+                  <i class="fa fa-plus-circle"></i>
+                  <span class="nav-link-text"> </span>
+                  </a>
+               </li>
+               <li class="nav-item " data-toggle="tooltip" data-placement="right" title="" data-original-title="Components">
+                  <a class="nav-link " >
+                  <i class="fa fa-shopping-cart"></i>
+                  <span class="nav-link-text"> </span>
+                  </a>
+               </li>
+               <li class="nav-item " data-toggle="tooltip" data-placement="right" title="" data-original-title="Components">
+                  <a class="nav-link " >
+                  <i class="fa fa-user"></i>
+                  <span class="nav-link-text"> </span>
+                  </a>
+               </li>
+            </ul>
+            <ul class="navbar-nav sidenav-toggler">
+               <li class="nav-item footer-user">
+                <div class="user">
+                  <span class="user-n">
+                    AC
+                  </span>
+                  <span class="name-l">a c</span>
+                  <span>medmro</span>
+                </div>
+                <div class="user-action">
+                  <a href="../settings.html" class=""><i class="fa fa-cog"></i></a>
+                  <a class="" href="#"><i class="fa fa-power-off"></i>
+                  </a>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <div class="content-wrapper no-padding ">
+         <div class="container-fluid no-padding">
+            <div class="row">
+               <div class="col-sm-12">
+                 <div class="top-tabs product-tabs">
+           <ul class="nav nav-tabs">
+              <li ><a data-toggle="tab" href="#home">Inventory</a></li>
+              <li><a data-toggle="tab" href="#menu1">Prices</a></li>
+              <li class="active"><a data-toggle="tab" href="#menu2"  class="active show">Products</a></li>
+              <li><a data-toggle="tab" href="#menu3">Images</a></li>
+            </ul>
+
+            <div class="tab-content">
+              <div id="home" class="tab-pane fade ">
+               <div class="row">
+                  <div class="col-sm-12 col-md-12">
+                  <p>This is your offer on the Tradeshift Marketplace. All Users on the Tradeshft Network are able to find your offered products and services. By letting external search engines (like Google) index and find your offered items you can make your offer truely global.</p>
+                  <hr>
+                </div>
+               </div>
+              </div>
+              <div id="menu1" class="tab-pane fade">
+                <div class="content-block">
+              <div class="title-inner">
+               <span class="pull-left">Your Marketplace Offer</span> 
+               <span class="pull-right"><a href="#" class="btn btn-success">Published</a></span> 
+               <div class="clearfix"></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-12">
+                  <p>This is your offer on the Tradeshift Marketplace. All Users on the Tradeshft Network are able to find your offered products and services. By letting external search engines (like Google) index and find your offered items you can make your offer truely global.</p>
+                  <hr>
+                </div>
+                <div class="col-sm-12 col-md-12">
+                  <p>OFFERED CURRENCY</p>
+                   <hr>
+                </div>
+
+                 <div class="col-sm-12 col-md-12">
+                  <p>PRODUCTS IN THIS OFFER</p>
+                  <ul class="product-list">
+                    <li><a href="#">Product offered <span>2</span></a></li>
+                    <li><a href="#">Public on web <span>1</span></a></li>
+                    <li><a href="#">Unoffered products <span>--</span></a></li>
+                  </ul>
+                   <hr>
+                </div>
+                <div class="col-sm-12 col-md-12">
+                 <span class="pull-left">Price Visibility</span> 
+                 <span class="pull-right">
+                  <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+                </span> 
+                 <div class="clearfix"></div>
+                 <p>Show price on the Tradeshift Marketplace (you can change this per individualproduct)</p>
+                </div>
+               
+              </div>
+            </div>
+              </div>
+              <div id="menu2" class="tab-pane fade in active show">
+                  <div class="table-block">
+                           <div class="table-responsive product-list-table">
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                              <thead>
+                                <tr>
+                                  <th><input type="checkbox" name="" id="select_all"></th>
+                                  <th>Image</th>
+                                  <th>SKU</th>
+                                  <th>Title</th>
+                                  <th>Brand</th>
+                                  <th>Category</th>
+                                  <th>Quantity</th>
+                                  <th>List Price</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td><input type="checkbox" name="" class="checkbox" ></td>
+                                  <td><img src="../img/item.jpg"></td>
+                                  <td>454515151</td>
+                                  <td>Solid Nylon beanbag</td>
+                                  <td>Real Space</td>
+                                  <td>Furniture</td>
+                                  <td>32</td>
+                                  <td>$134.00</td>
+                                </tr>
+                                <tr>
+                                  <td><input type="checkbox" name="" class="checkbox" ></td>
+                                  <td><img src="../img/item.jpg"></td>
+                                  <td>454515151</td>
+                                  <td>Solid Nylon beanbag</td>
+                                  <td>Real Space</td>
+                                  <td>Furniture</td>
+                                  <td>32</td>
+                                  <td>$134.00</td>
+                                </tr>
+                                <tr>
+                                  <td><input type="checkbox" name="" class="checkbox" ></td>
+                                  <td><img src="../img/item.jpg"></td>
+                                  <td>454515151</td>
+                                  <td>Solid Nylon beanbag</td>
+                                  <td>Real Space</td>
+                                  <td>Furniture</td>
+                                  <td>32</td>
+                                  <td>$134.00</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+              </div>
+            </div>
+         </div>
+         <!-- /.container-fluid-->
+          <div class="create-product hide">
+            <div class="title-modal">
+              <h4>Create Product</h4>
+              <button type="button" class="close close-dialog" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="content-block">
+              <div class="title-inner">
+                Details
+              </div>
+              <div class="row">
+                <div class="col-sm-8">
+                  <div class="form-group">
+                  <label>Name</label>
+                  <input type="text" class="form-control" name="">
+                  </div>
+                  <div class="form-group">
+                    <label>DESCRIPTION (OPTIONAL)</label>
+                    <textarea class="form-control" cols="8" rows="4" style="min-height: 125px;"></textarea>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="form-group">
+                    <label>UPC</label>
+                     <input type="text" class="form-control" name="">
+                  </div>
+                  <div class="form-group">
+                    <label>UNSPSC COMMODITY CODE</label>
+                     <input type="text" class="form-control" name="">
+                  </div>
+                  <div class="form-group">
+                    <label>YOUR CATEGORY NAME (OPTIONAL)</label>
+                     <input type="text" class="form-control" name="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-block">
+              <div class="title-inner">
+                Pricing
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="form-group">
+                  <label>BASE PRICE (EUR)</label>
+                  <input type="text" class="form-control" name="">
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="form-group">
+                    <label>PER BASE QUANTITY</label>
+                     <input type="text" class="form-control" name="" placeholder="1">
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="form-group">
+                    <label>UNIT OF MEASURE</label>
+                     <input type="text" class="form-control" name="" placeholder="EA-each">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <hr>
+                <div class="desc-text">
+                <div class="edit-btn right-btn-set">
+                           <a href="#">Edit</a>
+                        </div>
+                <p>Lot Size</p>        
+                <p>Users can order this product in lots of 1 <b>EA - each</b> </p>
+                </div>
+                <hr>
+                <div class="desc-text">
+                <div class="edit-btn right-btn-set">
+                           <a href="#">Edit</a>
+                        </div>
+                <p>Minimum order quantity</p>        
+                <p>Users can order this product in lots of 1 <b>EA - each</b> </p>
+                </div>
+              </div>
+            </div>
+            <div class="content-block">
+              <div class="title-inner">
+                Logistics
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="form-group">
+                  <label>LEAD TIME (IN DAYS) (OPTIONAL)</label>
+                  <input type="text" class="form-control" name="">
+                  </div>
+                </div>
+                
+              </div>
+              
+            </div>
+          </div>
+               </div>
+            </div>
+         </div>
+         <!-- /.container-fluid-->
+         <!-- Scroll to Top Button-->
+         <a class="scroll-to-top rounded" href="#page-top">
+         <i class="fa fa-angle-up"></i>
+         </a>
+          <div class="overlay-full hide"></div>
+        <div  id="product-detail" class=" right-bar hide ">
+          <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Solid Nylon beanbag</span>  <i class="fa fa-close"></i></a>
+          <div class="col-sm-12">
+            <br>
+            <div class="alert alert-info">
+              This product is pending approval by retailer
+            </div>
+            <div class="form-group">
+              <label>Product Status: <b>Offline</b></label>
+            </div>
+            <div class="form-group">
+              <div class="tabs-media">
+                <ul class="nav nav-tabs">
+                  <li class="active"><a data-toggle="tab" href="#content-b" class="active show">Content</a></li>
+                  <li><a data-toggle="tab" href="#media">Media</a></li>
+                  <li><a data-toggle="tab" href="#price">Price & Qty.</a></li>
+                  <li><a data-toggle="tab" href="#history">History</a></li>
+                </ul>
+
+                <div class="tab-content">
+                  <div id="content-b" class="tab-pane fade in active show">
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <label>SKU:</label>
+                        </div>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" placeholder="321145" name="">
+                        </div>
+                      </div>
+                    </div>
+                     <div class="form-group">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <label>Category <span class="required">*</span> </label>
+                        </div>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" placeholder="321145" name="">
+                        </div>
+                      </div>
+                    </div>
+                    <h5>Details and Descriptions</h5>
+                    <hr>
+                     <div class="form-group">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <label>Title <span class="required">*</span> </label>
+                        </div>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" placeholder="Solid Nylon Beanbag" name="">
+                        </div>
+                      </div>
+                    </div>
+                     <div class="form-group">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <label>Description <span class="required">*</span> </label>
+                        </div>
+                        <div class="col-sm-9">
+                          <textarea class="form-control" placeholder="This is best bag we have"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                     <div class="form-group">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <label>Brand <span class="required">*</span> </label>
+                        </div>
+                        <div class="col-sm-9">   
+                          <input type="text" class="form-control" placeholder="Ace Bena" name="">
+                        </div>
+                      </div>
+                    </div>
+                    <h5>Others</h5>
+                    <hr>
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <label>Price</label>
+                        </div>
+                        <div class="col-sm-9">   
+                          <input type="text" class="form-control" placeholder="189.00" name="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="media" class="tab-pane fade">
+                     <div class="form-group">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <img src="../img/test.jpeg">
+                          <label>Primary</label>
+                        </div>
+                        <div class="col-sm-6">
+                          <a href="#" class=" btn btn-circle btn-primary">add image</a>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div id="price" class="tab-pane fade">
+                          <div class="form-group">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <select class="form-control">
+                            <option>Add Price</option>
+                          </select>
+                        </div>
+                        <div class="col-sm-9">
+                          <a href="#" class=" btn btn-circle btn-primary">add</a>
+                        </div>
+                      </div>
+                    </div>
+                     <div class="form-group">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <label>List Price ($) </label>
+                        </div>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" placeholder="189" name="">
+                        </div>
+                      </div>
+                    </div>
+                     <div class="form-group">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <label>Quantity </label>
+                        </div>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" placeholder="322" name="">
+                        </div>
+                      </div>
+                    </div>
+                     <div class="form-group">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <label>Shipping Cost Override </label>
+                        </div>
+                        <div class="col-sm-9">
+                            <table class="table table-bordered">
+                              <thead>
+                                <tr>
+                                  <th class="bg-success" style="color: #fff;">Shipping option</th>
+                                  <th class="bg-info" style="color: #fff;">Override Cost</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Expedited</td>
+                                  <td></td>
+                                </tr>
+                                <tr>
+                                  <td>Overnight</td>
+                                  <td></td>
+                                </tr>
+                                <tr>
+                                  <td>Standard</td>
+                                  <td></td>
+                                </tr>
+                                
+                              </tbody>
+                            </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="history" class="tab-pane fade">
+                          <div class="form-group">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <select class="form-control">
+                            <option>Add Price</option>
+                          </select>
+                        </div>
+                        <div class="col-sm-9">
+                          <a href="#" class=" btn btn-circle btn-primary">add</a>
+                        </div>
+                      </div>
+                    </div>
+                     <div class="form-group">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <label>List Price ($) </label>
+                        </div>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" placeholder="189" name="">
+                        </div>
+                      </div>
+                    </div>
+                     <div class="form-group">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <label>Quantity </label>
+                        </div>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" placeholder="322" name="">
+                        </div>
+                      </div>
+                    </div>
+                     <div class="form-group">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <label>Shipping Cost Override </label>
+                        </div>
+                        <div class="col-sm-9">
+                            <table class="table table-bordered">
+                              <thead>
+                                <tr>
+                                  <th class="bg-success" style="color: #fff;">Shipping option</th>
+                                  <th class="bg-info" style="color: #fff;">Override Cost</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Expedited</td>
+                                  <td></td>
+                                </tr>
+                                <tr>
+                                  <td>Overnight</td>
+                                  <td></td>
+                                </tr>
+                                <tr>
+                                  <td>Standard</td>
+                                  <td></td>
+                                </tr>
+                                
+                              </tbody>
+                            </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12">
+            
+                  <div class="form-group">
+                    <a href="#" class="btn btn-success btn-circle">Save</a>
+                    <a href="#" class="btn btn-primary btn-circle">Cancel</a>
+                    <a href="#" class="btn btn-success btn-circle">Download Images</a>
+                  </div>
+          </div>
+      </div>
+     
+         <!-- Bootstrap core JavaScript-->
+         <script src="../vendor/jquery/jquery.min.js"></script>
+         <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+         <!-- Core plugin JavaScript-->
+         <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+         <!-- Custom scripts for all pages-->
+    <!-- Custom scripts for this page-->
+    <script src="../js/sb-admin-datatables.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="../vendor/datatables/jquery.dataTables.js"></script>
+    <script src="../vendor/datatables/dataTables.bootstrap4.js"></script>
+         <script src="../js/sb-admin.js"></script>
+          <script type="text/javascript">
+              //select all checkboxes
+              $("#select_all").change(function(){  //"select all" change 
+                  $(".checkbox").prop('checked', $(this).prop("checked")); //change all ".checkbox" checked status
+              });
+
+              //".checkbox" change 
+              $('.checkbox').change(function(){ 
+                  //uncheck "select all", if one of the listed checkbox item is unchecked
+                  if(false == $(this).prop("checked")){ //if this item is unchecked
+                      $("#select_all").prop('checked', false); //change "select all" checked status to false
+                  }
+                  //check "select all" if all checkbox items are checked
+                  if ($('.checkbox:checked').length == $('.checkbox').length ){
+                      $("#select_all").prop('checked', true);
+                  }
+              });
+            </script>
+      </div>
+   </body>
+</html>
