@@ -951,7 +951,7 @@ div#myWizard a.btn-circle:first-child{border-left:none}
 .supplier-regi-nav li:first-child{float: left;}
 .supplier-regi-nav li:last-child{float: right;}
 .sidenav-toggled .supplier-regi-nav{width: 96%;}
-.task-list{width: 79%;}
+.task-list{width:auto;}
 .sidenav-toggled .task-list{width: 96%;}
 .task-list li:last-child{float: right;padding: 0px;text-align: right;}
 .task-list li:last-child a{border-radius:35px;line-height: inherit;}
@@ -974,3 +974,28 @@ div#myWizard a.btn-circle:first-child{border-left:none}
 .tabs-media .tab-content{padding:15px;margin-top:15px;}
 .required{color: red;}
 .tabs-media #media img{width: 85px;display: block;margin-bottom: 10px;}
+.approval-confirm:hover{cursor: pointer;}
+.price-limit .progress-bar{background-color: #fff;}
+.price-limit label{font-size: 11px;text-transform: uppercase;margin-bottom: 0px;margin-top: 10px;}
+.price-limit span.price{float: right;font-size: 11px;padding-top:10px;}
+.product-desc span{display: block;}
+.chat-approval .user-name{float: right;width: 235px;padding: 0px;}
+.chat-approval .user-name p{font-size: 12px;color: #555;margin-bottom: 5px;}
+.chat-approval .user-name span{font-size: 12px;margin-bottom: 10px;display: block;}
+.close-comment, .close-comment:hover {background: #007bff; color: #fff; font-weight: 600; display: block; padding: 8px; height: 40px;font-size: 18px; } 
+.close-comment i{float:right;padding-top: 3px;}
+#reject-approval a.close-sidebar{background: #c73838;font-size: 18px;}
+.item-desc{border: 1px solid #eee; box-shadow: 0px 3px 3px #ccc;padding: 5px;margin-top:10px;margin-bottom: 10px;}
+
+@media (max-width: 992px) {
+#sidenavToggler{display: none;}
+.search-block{position: relative;left: 0;width: 100%;height: inherit;}
+.search-block li{display: block;margin-bottom: 5px;}
+.search-block li a{margin-bottom: 5px;}
+.document-list ul li span{float: none;}
+.search-block li:last-child {
+    width: 100%;
+    float: none!important;
+    text-align: center!important;
+}
+}

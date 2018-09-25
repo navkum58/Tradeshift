@@ -492,5 +492,26 @@ $(document).ready(function() {
         $('#product-detail').removeClass('hide');
         $('.overlay-full').removeClass('hide');
      });
+      $('.approval-confirm').click(function() {
+        $('.overlay-full').show();
+        $('#approval-confirm').show();
+    });
+      $('.comments-block').click(function(){
+        $('.overlay-full').show();
+        $('#comments-block').show();
+      });
 
+       $('.close-comment').click(function(){
+        $('#comments-block').hide();
+    });
+
+        $('.reject-purchase').click(function(){
+        $('.overlay-full').show();
+        $('#reject-purchase').show();
+      });
+
+        $('.reject').click(function(){
+            $('.overlay-full').hide();
+            $('.right-bar').hide();
+        });
 })(jQuery); // End of use strict
