@@ -509,7 +509,7 @@ span.name{font-size:20px;padding-left:20px;font-weight:600;color:#2ec3ff;padding
 .tabs-inner li.active a{background-color:transparent!important;color:#888!important}
 .tabs-inner .tab-content{background-color:#fff}
 .sub-item li a img{width:66px;margin-bottom:5px}
-.sub-item li{display:inline-block;text-align:center;width:100px!important;margin:10px 0}
+.sub-item li{display:inline-block;text-align:center;width:99px!important;margin:10px 0}
 .sub-item li a span{font-size:10px;display:block}
 .sub-item li a{padding:0!important}
 li.controls{display:block;width:initial!important;margin:initial!important;margin-bottom:5px}
@@ -986,6 +986,34 @@ div#myWizard a.btn-circle:first-child{border-left:none}
 .close-comment i{float:right;padding-top: 3px;}
 #reject-approval a.close-sidebar{background: #c73838;font-size: 18px;}
 .item-desc{border: 1px solid #eee; box-shadow: 0px 3px 3px #ccc;padding: 5px;margin-top:10px;margin-bottom: 10px;}
+/*inbox container*/
+.inbox-wrapper {
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 396px;
+    border-right: 1px solid #cdcdcd;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 9999;
+    left: 320px;
+    background: #fff;
+    max-height: 750px;
+}
+.inbox-wrapper header{background: #72b148; color: #fff; height: 57px;line-height: px;font-size: 22px;padding:10px;font-weight: 600;}
+.inbox-wrapper header a{color: #fff;}
+.inbox-wrapper header i{float: right;padding-top: 7px;}
+.inbox-wrapper .document-list ul li {padding: 10px 0px;}
+.inbox-wrapper .document-list ul li .details{width: 75%;}
+.inbox-wrapper .task-list-accordian .document-list ul li .v-filter{padding-top: 5px;}
+.foot-box{position: relative;}
+.foot-box .footer-inbox {position: fixed; bottom: 0; padding: 7px 10px; background: #f2f2f2; width: 100%; text-align: right; z-index: 99999; }
+.sidenav-toggled .inbox-wrapper {left: 65px;}
+.inbox-show .content-wrapper{}
+
+ /*inbox container*/
+
+
 .chat-box {
     /* background: #1bb5ff; */
     position: fixed;

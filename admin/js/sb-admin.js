@@ -514,4 +514,15 @@ $(document).ready(function() {
             $('.overlay-full').hide();
             $('.right-bar').hide();
         });
+    $('.inbox-task').click(function(){
+        $('.bg-dark').addClass('inbox-show');
+        $('.inbox-wrapper').removeClass('hide');
+    });
+
+    $('.close-inbox').click(function(){
+
+        $('.bg-dark').removeClass('inbox-show');
+        $('.inbox-wrapper').addClass('hide');
+    });
+
 })(jQuery); // End of use strict
