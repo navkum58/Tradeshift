@@ -524,5 +524,12 @@ $(document).ready(function() {
         $('.bg-dark').removeClass('inbox-show');
         $('.inbox-wrapper').addClass('hide');
     });
-
+      $('.edit-data').click(function(){
+        $('.read-mode').addClass('hide');
+        $('.edit-mode').removeClass('hide');
+    });
+    $('.update-data').click(function(){
+        $('.read-mode').removeClass('hide');
+        $('.edit-mode').addClass('hide');
+    });
 })(jQuery); // End of use strict

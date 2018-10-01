@@ -1123,3 +1123,70 @@ button#btn-chat {
     text-align: center!important;
 }
 }
+/*other-actions invoice*/
+.invoice-block{max-width: 1024px;margin: 0 auto;}
+.other-actions{display: inline-block;margin-right: 10px;}
+.other-actions .dropdown-menu{padding: 0px;margin: 0px;}
+.other-actions>a{text-transform: uppercase;}
+.other-actions .dropdown-menu a{color: #00b0ff;}
+.po-title p{margin-bottom: 0px;}
+.content-invoice{margin-bottom: 40px; overflow: hidden;background: #fff;box-shadow: 0px 0px 3px #ccc;border-radius: 3px;padding: 15px;position: relative;}
+.box-bg{background: #eee; width: 200px;height: 200px;float: right;}
+.ribbon {
+    width: 200px;
+    height: 200px;
+    position: absolute !important;
+    margin: 0 !important;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+}.ribbon ._outer {
+    display: block;
+    text-align: center;
+    background-color: #63A239;
+    padding: 20px;
+    position: absolute;
+    width: 300px;
+    top: -90px;
+    left: 60px;
+    font-size: 24px;
+    color: #fff;
+    border: 5px double #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    cursor: default;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -webkit-transform: rotate(45deg);
+    -webkit-transform-origin: 0 0;
+    -moz-transform: rotate(45deg);
+    -moz-transform-origin: 0 0;
+    -ms-transform: rotate(45deg);
+    -ms-transform-origin: 0 0;
+    -o-transform: rotate(45deg);
+    -o-transform-origin: 0 0;
+    transform: rotate(45deg);
+    transform-origin: 0 0;
+}
+.related{background: #ccc;}
+.box-bg .ribbon._ready {
+    visibility: visible;
+}
+.related {
+    background: #fff083;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+.content-invoice-block{margin-top: 25px;}
+.content-invoice-block label{font-weight: 600;text-transform: capitalize;margin-bottom: 5px;color: #888;font-size: 13px;}
+.content-invoice-block p{margin-bottom: 0px;}
+.total-block{margin-top: 40px;}
+.total-block p{margin-bottom: 0px;}
+.total-block p label{font-size: 14px;}
+.total-block p span{float:right;}
+.total label{font-size: 28px!important;font-weight: 600;}
+.total span{font-size: 28px;font-weight: 600;}
+.detail-block label{font-size: 13px; font-weight: 700;}
+.detail-block span{font-size: 13px;}
