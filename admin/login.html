@@ -26,14 +26,8 @@
       <ul class="navbar-nav ml-auto">
         <li><a href="#">Learn More</a></li>
         <li class="dropdown">
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language <span class="caret"></span></a>
-                     <ul class="dropdown-menu">
-                        <li><a href="/">English</a></li>
-                        <li><a href="/de/">Deutsch</a></li>
-                        <li><a href="/ja/">日本語</a></li>
-                        <li><a href="/fr/">Français</a></li>
-                        <li><a href="#">中文</a></li>
-                     </ul>
+                <input type="text" class="form-control lanuage-selector" placeholder="English (UK)" name=""> <i class="fa fa-caret-down"></i>
+                    
                   </li>
        </ul>
     </div>
@@ -71,10 +65,42 @@
          <span>Don't have an Account? <a class="mt-5" href="register.html"> Sign up</a></span> 
         </div>
   </div>
+
+      <div class="overlay-full hide"></div>
+   <div  id="language" class=" right-bar hide">
+         <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Choose Language</span> <i class="fa fa-close"></i></a>
+         <input type="search" placeholder="Search Language" class="form-control search-lan" name="">
+         <menu>
+            <li id="key638445448-0"><button><span>Select language</span><i class="fa fa-check"></i></button></li>
+            <li id="key638445448-1"><button><span>Bahasa Indonesia</span><i class="fa fa-check"></i></button></li>
+            <li id="key638445448-2"><button><span>Bahasa Melayu</span><i class="fa fa-check"></i></button></li>
+            <li id="key638445448-3"><button><span>Castellano</span><i class="fa fa-check"></i></button></li>
+            <li id="key638445448-4"><button><span>Dansk</span><i class="fa fa-check"></i></button></li>
+            <li id="key638445448-5"><button><span>Deutsch</span><i class="fa fa-check"></i></button></li>
+            <li id="key638445448-6"><button><span>Deutsch (CH)</span><i class="fa fa-check"></i></button></li>
+            <li id="key638445448-7"><button class="active"><span>English (UK)</span><i class="fa fa-check"></i></button></li>
+            <li id="key638445448-8"><button><span>English (US)</span><i class="fa fa-check"></i></button></li>
+            <li id="key638445448-9"><button><span>Français</span><i class="fa fa-check"></i></button></li>
+            <li id="key638445448-10"><button><span>Italiano</span><i class="fa fa-check"></i></button></li>
+            <li id="key638445448-11"><button><span>Magyar</span><i class="fa fa-check"></i></button></li>
+            <li id="key638445448-12"><button><span>Nederlands</span><i class="fa fa-check"></i></button></li>
+            <li id="key638445448-13"><button><span>Norsk Bokmål</span><i class="fa fa-check"></i></button></li>
+            <li id="key638445448-14"><button><span>Polski</span><i class="fa fa-check"></i></button></li>
+            <li id="key638445448-15"><button><span>Português (Brasil)</span><i class="fa fa-check"></i></button></li>
+            <li id="key638445448-16"><button><span>Português (Portugal)</span><i class="fa fa-check"></i></button></li>
+            <li id="key638445448-17"><button><span>Română</span><i class="fa fa-check"></i></button></li>
+            <li id="key638445448-18"><button><span>Suomi</span><i class="fa fa-check"></i></button></li>
+            <li id="key638445448-19"><button><span>Svenska</span><i class="fa fa-check"></i></button></li>
+            <li id="key638445448-20"><button><span>日本語</span><i class="fa fa-check"></i></button></li>
+            <li id="key638445448-21"><button><span>简体中文</span><i class="fa fa-check"></i></button></li>
+            <li id="key638445448-22"><button><span>繁体中文</span><i class="fa fa-check"></i></button></li>
+         </menu>
+      </div>
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- Core plugin JavaScript-->
+      <script src="js/sb-admin.js"></script>
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 </body>
 

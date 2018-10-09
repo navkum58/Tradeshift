@@ -23,16 +23,10 @@
          <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                <li><a href="#">Learn More</a></li>
-               <li class="dropdown">
-                  <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                     <li><a href="/">English</a></li>
-                     <li><a href="/de/">Deutsch</a></li>
-                     <li><a href="/ja/">日本語</a></li>
-                     <li><a href="/fr/">Français</a></li>
-                     <li><a href="#">中文</a></li>
-                  </ul>
-               </li>
+              <li class="dropdown">
+                <input type="text" class="form-control lanuage-selector" placeholder="English (UK)" name=""> <i class="fa fa-caret-down"></i>
+                    
+                  </li>
             </ul>
          </div>
       </nav>
@@ -470,7 +464,8 @@
          </menu>
       </div>
       <div  id="language" class=" right-bar hide">
-         <a href="JavaScript:void(0)" class="close-sidebar"><i class="fa fa-close"></i></a>
+         <a href="JavaScript:void(0)" class="close-sidebar"><span class="pull-left">Choose Language</span> <i class="fa fa-close"></i></a>
+         <input type="search" placeholder="Search Language" class="form-control search-lan" name="">
          <menu>
             <li id="key638445448-0"><button><span>Select language</span><i class="fa fa-check"></i></button></li>
             <li id="key638445448-1"><button><span>Bahasa Indonesia</span><i class="fa fa-check"></i></button></li>

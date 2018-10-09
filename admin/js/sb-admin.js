@@ -532,4 +532,8 @@ $(document).ready(function() {
         $('.read-mode').removeClass('hide');
         $('.edit-mode').addClass('hide');
     });
+    $('.overlay-full').click(function(){
+            $('.overlay-full').hide();
+            $('.right-bar').hide();
+    });
 })(jQuery); // End of use strict
