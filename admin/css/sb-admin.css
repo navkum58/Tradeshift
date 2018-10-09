@@ -1190,3 +1190,5 @@ button#btn-chat {
 .total span{font-size: 28px;font-weight: 600;}
 .detail-block label{font-size: 13px; font-weight: 700;}
 .detail-block span{font-size: 13px;}
+.pagination{float: right;}
+.chart-dashboard .card-body{padding-top: 15px;}
